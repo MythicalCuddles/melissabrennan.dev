@@ -204,7 +204,7 @@ ul.tileLinks li + li::before {
     display: inline-block;
     margin: 5px 3px;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 5px;
     width: auto;
     box-shadow: 
         inset 0 2em 1em -1em rgba(255, 255, 255, 0.125),
