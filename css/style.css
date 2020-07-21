@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+body {
+    /* Background pattern from Toptal Subtle Patterns */
+    background-image: url("../images/background.png");
+    background-color: #0d1521;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+#container {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 5px;
+    color: whitesmoke;
+    text-align: left;
+    overflow: hidden;
+    background-color: rgba(141, 141, 141, 0.1);
+    padding: 5px;
+    border-radius: 20px;
+}
+
+#topContent {
+    font-family: 'Chilanka', cursive;
+    font-size: 40px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 0%;
+    padding-top: 10px;
+    letter-spacing: 5px;
+}
+
+#pageTitle {
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: palevioletred;
+}
+
+a:hover {
+    text-decoration: none;
+    color: crimson;
+}
+
+#footLeft {
+    float: left;
+}
+#footRight {
+    float: right;
+    text-align: right;
+}
+
+.mainContent {
+    margin: 1em;
+}
+
+h1.sectionHeading {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Patrick Hand', cursive;
+    letter-spacing: 2px;
+    font-size: 32px;
+}
+
+h1.sectionHeading::before,
+h1.sectionHeading::after {
+    content: '';
+    border-top: 5px double rgb(120, 120, 120);
+    margin: 0 20px 0 20%;
+    flex: 1 0 20px;
+
+}
+
+h1.sectionHeading::after {
+    margin: 0 20% 0 20px;
+}
+
+.mainContent .tileContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, auto));
+    row-gap: 1em;
+    column-gap: 1em;
+}
+
+.mainContent .tile {
+    box-sizing: border-box;
+    position: relative;
+    font-weight: 400;
+}
+
+header {
+    display: block;
+}
+
+.mainContent .tile header {
+    width: 100%;
+}
+
+.mainContent .tileButton {
+    position: relative;
+    display: block;
+    padding: .5em .75em;
+    border: 1px solid #000;
+    border-radius: 4px;
+    background: #666;
+    box-shadow: 
+        inset 0 0 0 40em rgba(0, 0, 0, 0.1), 
+        inset 0 -4em 8em -3.6em rgba(0, 0, 0, 0.5), 
+        inset 0 0 3px 1px rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    line-height: 110%;
+    transition: box-shadow linear .2s;
+}
+
+.mainContent .tile header h2 {
+    margin: 0;
+    color: #fff;
+    text-shadow: 
+        0.5px 0.5px 0.5px #000, 
+        -0.5px 0.5px 0.5px #000, 
+        0.5px -0.5px 0.5px #000,
+        -0.5px -0.5px 0.5px #000;
+}
+
+.mainContent .tile h2 {
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.mainContent header time {
+    display: block;
+    position: absolute;
+    top: .25em;
+    right: .5em;
+    font-size: .66em;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+.mainContent .tile header.tileImage {
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+    box-shadow: 0 0 0.125em #000;
+}
+
+ul.tileLinks {
+    display: block;
+    text-align: center;
+    margin: 1em 0;
+    padding: .5em 0 .5em;
+    border-top: 1px dotted rgba(255, 255, 255, 0.25);
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.25);
+}
+
+ul {
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0em;
+    margin-inline-end: 0em;
+    padding-inline-start: 40px;
+}
+
+li {
+    text-align: -webkit-match-parent;
+    line-height: 1.5;
+}
+
+ul.tileLinks li {
+    margin: 0;
+    display: inline-block;
+    list-style-type: none;
+}
+
+ul.tileLinks li + li::before {
+    content: ' •  ';
+}
+
+#socialPills {
+    text-align: center;
+}
+
+.pill {
+    border: none;
+    color: white;
+    padding: 5px 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    margin: 5px 3px;
+    cursor: pointer;
+    border-radius: 20px;
+    width: auto;
+    box-shadow: 
+        inset 0 2em 1em -1em rgba(255, 255, 255, 0.125),
+        inset 0 -2em 1em 1em rgba(0, 0, 0, 0.25),
+        inset 0 0 0.25em rgba(255, 255, 255, 0.5);
+    transition: box-shadow .1s linear, padding-top .1s linear;
+}
