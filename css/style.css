@@ -150,11 +150,13 @@ header {
 }
 
 
-.mainContent .tile header.tileImage {
+.mainContent .tileImage {
     display: block;
     width: 100%;
     margin-bottom: 1em;
     box-shadow: 0 0 0.125em #000;
+    padding: 1px;
+    border-radius: 5px;
 }
 
 ul.tileLinks {
