@@ -12,7 +12,7 @@ body {
 
 #container {
     width: 100%;
-    max-width: 1120px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 5px;
     color: whitesmoke;
@@ -67,7 +67,7 @@ h1.sectionHeading {
     text-align: center;
     font-family: 'Patrick Hand', cursive;
     letter-spacing: 2px;
-    font-size: 32px;
+    font-size: 35px;
 }
 
 h1.sectionHeading::before,
@@ -85,7 +85,8 @@ h1.sectionHeading::after {
 
 .mainContent .tileContainer {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, auto));
+    grid-template-columns: repeat(auto-fill, minmax(412px, 412px));
+    margin: 0px 0px 60px 0px;
     row-gap: 1em;
     column-gap: 1em;
 }
@@ -94,6 +95,25 @@ h1.sectionHeading::after {
     box-sizing: border-box;
     position: relative;
     font-weight: 400;
+    text-align: center;
+    background-color: rgba(141, 141, 141, 0.1);
+    border-radius: 10px;
+    padding: 4px;
+}
+
+.mainContent .tile p {
+    margin: 10px 10px 10px 10px;
+}
+
+.mainContent .tile img {
+    max-width: 100%;
+    position: relative;
+    border-radius: 10px 50px;
+    text-decoration: none;
+}
+
+.mainContent .tile header {
+    -webkit-text-stroke: .05px #000;
 }
 
 header {
