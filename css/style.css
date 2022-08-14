@@ -50,6 +50,15 @@ a:hover {
 #footLeft {
     float: left;
 }
+#footCenter {
+    text-align: center;
+    display: block;
+    background-color: rgba(141, 141, 141, 0.05);
+    border-radius: 10px;
+    padding: 6px;
+    margin: 4px;
+    font-size: 14px;
+}
 #footRight {
     float: right;
     text-align: right;
