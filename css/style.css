@@ -93,7 +93,7 @@ h1.sectionHeading::after {
 
 .mainContent .tileContainer {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     margin: 0px 0px 60px 0px;
     row-gap: 1em;
     column-gap: 1em;
