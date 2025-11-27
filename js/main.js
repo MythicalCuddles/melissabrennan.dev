@@ -1,9 +1,29 @@
 // melissabrennan.dev - portfolio renderer
 
 document.addEventListener('DOMContentLoaded', () => {
-    renderSocialLinks();
-    renderPortfolio();
+    try {
+        renderSocialLinks();
+        renderPortfolio();
+        hideJsWarning();
+    } catch (error) {
+        console.error('Failed to render portfolio content.', error);
+        showJsWarning();
+    }
 });
+
+function hideJsWarning() {
+    const warning = document.querySelector('[data-js-warning]');
+    if (warning) {
+        warning.classList.add('is-hidden');
+    }
+}
+
+function showJsWarning() {
+    const warning = document.querySelector('[data-js-warning]');
+    if (warning) {
+        warning.classList.remove('is-hidden');
+    }
+}
 
 function renderSocialLinks() {
     const socialContainer = document.querySelector('[data-social-container]');
