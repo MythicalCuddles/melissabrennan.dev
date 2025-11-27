@@ -177,11 +177,18 @@ header {
 .mainContent .tile header h2 {
     margin: 0;
     color: #fff;
-    text-shadow: 
-        0.5px 0.5px 0.5px #000, 
-        -0.5px 0.5px 0.5px #000, 
+    text-shadow:
+        0.5px 0.5px 0.5px #000,
+        -0.5px 0.5px 0.5px #000,
         0.5px -0.5px 0.5px #000,
         -0.5px -0.5px 0.5px #000;
+}
+
+.mainContent .tile .tileLanguages {
+    margin: .15em 0 0;
+    font-size: .9em;
+    color: rgba(255, 255, 255, 0.85);
+    letter-spacing: 0.01em;
 }
 
 .mainContent .tile h2 {

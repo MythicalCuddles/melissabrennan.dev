@@ -28,6 +28,7 @@ const portfolioData = {
                     title: 'melissabrennan.dev',
                     url: 'https://melissabrennan.dev',
                     colorClass: 'bg-web-primary',
+                    languages: ['HTML', 'CSS'],
                     description: [
                         'Nothing special, its just this website you\'re looking at right now where I display the projects I\'m looking to share with everyone. The source code for this website is available on GitHub and was inspired by <a target="_blank" href="https://eev.ee">eev.ee</a>. You should check her out too!'
                     ],
@@ -41,6 +42,7 @@ const portfolioData = {
                     title: 'mythicalcuddl.es',
                     url: 'https://mythicalcuddl.es',
                     colorClass: 'bg-web-purple',
+                    languages: ['HTML', 'CSS'],
                     description: [
                         'This domain just redirects to my Discord Server (invite link). I might do something with it in the future.'
                     ],
@@ -54,6 +56,7 @@ const portfolioData = {
                     title: 'mythicalcuddles.xyz',
                     url: 'https://mythicalcuddles.xyz',
                     colorClass: 'bg-web-gray',
+                    languages: ['HTML', 'CSS'],
                     description: [
                         'This domain just redirects to my Discord Server (invite link). I might do something with it in the future.'
                     ],
@@ -73,6 +76,7 @@ const portfolioData = {
                     url: null,
                     colorClass: 'bg-vrchat-green',
                     fullRow: true,
+                    languages: ['Unity3D'],
                     description: [
                         'This whole section will be covering the creations I\'ve made in Unity3D to work along with the VRChat world. VRChat is a free game which you can download from Steam or the Oculus store, which allows the players to be in complete control of the content creation on the game. The game can be played on desktop or in Virtual Reality. I\'ve launched a couple of worlds, working on a few more and helped out in a few. You can view them here.'
                     ],
@@ -86,6 +90,7 @@ const portfolioData = {
                     title: 'The Lustful Wenches',
                     url: 'https://vrchat.com/home/launch?worldId=wrld_65aed793-367d-4251-8f33-aecd46243c0d',
                     colorClass: 'bg-vrchat-orange',
+                    languages: ['Unity3D', 'C#', 'Udon/UdonSharp'],
                     date: '2022/02/18',
                     content: [
                         { type: 'image', src: 'images/vrchat_lustfulwenches.png', alt: '' }
@@ -105,6 +110,7 @@ const portfolioData = {
                     title: 'Murder 4 Paintings',
                     url: null,
                     colorClass: 'bg-vrchat-blue',
+                    languages: ['Unity3D'],
                     date: '2021/11/19',
                     content: [
                         { type: 'image', src: 'images/vrchat_m4paintings.png', alt: '' },
@@ -124,6 +130,7 @@ const portfolioData = {
                     title: "Cuddles' Memories",
                     url: 'https://vrchat.com/home/launch?worldId=wrld_e2fa9d6b-4ee8-4bc8-bfd2-25892d4dd0a3',
                     colorClass: 'bg-vrchat-lilac',
+                    languages: ['Unity3D', 'Udon/UdonSharp'],
                     date: '2020/10/18',
                     content: [
                         { type: 'image', src: 'images/vrchat_cuddlesmemories.png', alt: '' }
@@ -146,6 +153,7 @@ const portfolioData = {
                     title: 'MelissaNET',
                     url: null,
                     colorClass: 'bg-uni-purple',
+                    languages: ['C#'],
                     description: [
                         'MelissaNET is a C# library, which was created mainly to provide update functionality via online version checking for DiscordBot. It has been developed to provide additional features that can be used over multiple projects.',
                         "At the moment, MelissaNET is a private repository as I am working on updating a ReadMe file for it and provide better functionality for global use. It is however attached with the release versions of DiscordBot."
@@ -178,6 +186,7 @@ const portfolioData = {
                     title: 'Book Loaning System',
                     url: 'https://github.com/MythicalCuddles/Book-Loaning-System',
                     colorClass: 'bg-uni-red',
+                    languages: ['Java'],
                     date: '2017/12/18',
                     description: [
                         'COM187 Software Development II Coursework 3 - A system for a primary school class that records which fiction and non-fiction books are lent out to the pupils.',
@@ -194,6 +203,7 @@ const portfolioData = {
                     title: 'Dynamic Web Authoring',
                     url: 'https://github.com/MythicalCuddles/UU-DynamicWebAuthoring',
                     colorClass: 'bg-uni-yellow',
+                    languages: ['HTML', 'CSS', 'JavaScript'],
                     date: '2018/08/17',
                     description: [
                         'COM353 Dynamic Web Authoring',
@@ -208,6 +218,7 @@ const portfolioData = {
                     title: 'Quiz Game',
                     url: null,
                     colorClass: 'bg-uni-orange',
+                    languages: ['C++'],
                     date: '2019/12/12',
                     description: [
                         'COM357 Coursework - A quiz game filled with multiple-choice questions aiming to access the players knowledge of C++. The player is able to enter their name and select an avatar before begining the game.',
@@ -221,6 +232,7 @@ const portfolioData = {
                     title: 'Booking System',
                     url: 'https://github.com/MythicalCuddles/UU-HCI',
                     colorClass: 'bg-uni-yellow',
+                    languages: ['HTML', 'CSS'],
                     date: '2018/08/17',
                     description: [
                         'COM308 HCI Coursework 3 - A system designed as a Medical Practice Booking System. Project part of HCI, which focused on the design aspect rather than the functionality aspect.'
@@ -234,6 +246,7 @@ const portfolioData = {
                     title: 'Software Development',
                     url: 'https://github.com/MythicalCuddles/UU-SoftwareDevelopment',
                     colorClass: 'bg-uni-green',
+                    languages: ['Java'],
                     description: [
                         'COM186 & COM187 Software Development - An asortment of practical work I\'ve done from these two modules.'
                     ],
@@ -246,6 +259,7 @@ const portfolioData = {
                     title: 'Introduction to Java',
                     url: 'https://github.com/MythicalCuddles/Introduction-to-Java-Programming-10th-Edition',
                     colorClass: 'bg-uni-blue',
+                    languages: ['Java'],
                     description: [
                         'Introduction to Java Programming 10th Edition - All the practicals I\'ve done from the Introduction to Java Programming 10th Edition book. These were only done during the COM186 & COM187 module dates, and may be updated in the future with more practical work.'
                     ],
@@ -258,6 +272,7 @@ const portfolioData = {
                     title: 'Computer Hardware',
                     url: 'https://github.com/MythicalCuddles/UU-ComputerHardware',
                     colorClass: 'bg-uni-purple',
+                    languages: ['Assembly'],
                     description: [
                         'COM181 Computer Hardware Coursework - This is the coursework I did for Computer Hardware, which contains an Binary Adder Circuit as Assignment 1 and a Decimal to Roman Numerals Converter as Assignment 2.'
                     ],
@@ -275,6 +290,7 @@ const portfolioData = {
                     title: 'DiscordBot',
                     url: 'https://github.com/MythicalCuddles/DiscordBot',
                     colorClass: 'bg-personal-blue',
+                    languages: ['C#', 'MySQL'],
                     headerNote: '🌟 Contributed to the <a target="_BLANK" href="https://archiveprogram.github.com">2020 GitHub Arctic Code Vault</a>!',
                     description: [
                         'DiscordBot is a C# Bot for Discord which includes many features such as allowing users to create their own profiles, earn EXP to level up and compete for #1 on the leaderboard and many more features.',
@@ -292,6 +308,7 @@ const portfolioData = {
                     title: 'DiscordBot Web',
                     url: 'https://bot.mythicalcuddles.xyz',
                     colorClass: 'bg-personal-maroon',
+                    languages: ['PHP', 'MySQL'],
                     date: '2022-08-14',
                     description: [
                         'DiscordBot Web is the web application that works along with DiscordBot. However, an instance of DiscordBot is required in order to have it working as the application creates and manages the required database tables and rows.',
@@ -308,6 +325,7 @@ const portfolioData = {
                     title: 'MogiiBot3',
                     url: 'https://github.com/MythicalCuddles/MogiiBot3',
                     colorClass: 'bg-personal-brown',
+                    languages: ['C#'],
                     date: '2018-06-00',
                     description: [
                         'MogiiBot is a C# Bot for Discord which was replaced by the DiscordBot project in 06-2018. It originally used JSON to store user files allowing users to have profiles provided by the bot along with other features.',
@@ -322,6 +340,7 @@ const portfolioData = {
                     title: 'Gender Essence',
                     url: 'https://genderessence.org.uk',
                     colorClass: 'bg-personal-plum',
+                    languages: ['HTML', 'CSS'],
                     description: [
                         "Gender Essence was one of my first websites I helped get online using a Content Management System (CMS). The use of the CMS allowed for the client to go on at a later time and alter the content of the websites to her liking, allowing for the website to show up to date information which best suited her company.",
                         "My work done with Gender Essence provided me with my first insight to CMS and the power they're able to deliver to easily build websites and modify the content on the website."

@@ -65,6 +65,7 @@ function buildTile(project) {
     const tile = cloneTemplate('tile-template');
     const button = tile.querySelector('.tileButton');
     const title = tile.querySelector('h2');
+    const languagesLine = tile.querySelector('.tileLanguages');
     const time = tile.querySelector('time');
     const headerNote = tile.querySelector('.tileHeaderNote');
     const contentContainer = tile.querySelector('.tileContent');
@@ -85,6 +86,12 @@ function buildTile(project) {
 
     if (project.colorClass) {
         button.classList.add(project.colorClass);
+    }
+
+    if (project.languages?.length) {
+        languagesLine.textContent = project.languages.join(' • ');
+    } else {
+        languagesLine.remove();
     }
 
     if (project.date) {
