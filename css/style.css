@@ -267,3 +267,28 @@ ul.tileLinks li + li::before {
         margin: 0.5em;
     }
 }
+/* Color utility classes */
+.bg-trans-pink { background-color: #F7A8B8; }
+.bg-muted-gray { background-color: #dbdbdb; color: #000; }
+.bg-trans-blue { background-color: #55CDFC; color: #000; }
+.bg-web-primary { background-color: #e66da9; }
+.bg-web-purple { background-color: #7445cc; }
+.bg-web-gray { background-color: #838383; }
+.bg-vrchat-green { background-color: #96eb8e; color: #000; }
+.bg-vrchat-orange { background-color: #f89019; }
+.bg-vrchat-blue { background-color: #4976a0; }
+.bg-vrchat-lilac { background-color: #ead2f1; color: #000; }
+.bg-uni-red { background-color: #FF6663; }
+.bg-uni-yellow { background-color: #FDFD97; color: #000; }
+.bg-uni-orange { background-color: #FEB144; color: #000; }
+.bg-uni-green { background-color: #9EE09E; color: #000; }
+.bg-uni-blue { background-color: #9EC1CF; color: #000; }
+.bg-uni-purple { background-color: #CC99C9; }
+.bg-personal-blue { background-color: #3088AE; }
+.bg-personal-maroon { background-color: #9D011B; }
+.bg-personal-brown { background-color: #816A67; }
+.bg-personal-plum { background-color: #570743; }
+
+.tileHeaderNote {
+    margin: 6px 0 0;
+}

@@ -5,13 +5,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="theme-color" content="#303030">
-        
+
         <title>Melissa Brennan // Portfolio</title>
-        
+
         <link rel="stylesheet" href="css/style.css?version=3">
-        <script src="js/main.js"></script>
-		
-	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+        <script src="js/projects-data.js" defer></script>
+        <script src="js/main.js" defer></script>
     </head>
     <body>
         <div id="container">
@@ -21,391 +21,10 @@
             <hr />
 
             <div class="mainContent">
-            
                 <h1 class="sectionHeading">Socials & Links</h1>
-                <div id="socialPills">
-                    <a target="_BLANK" class="pill" style="background-color: #F7A8B8;" href="https://github.com/mythicalcuddles"><i class="fab fa-github"></i> GitHub</a>
-                    <a target="_BLANK" class="pill" style="background-color: #dbdbdb;" href="https://instagram.com/mythicalcuddles"><i class="fab fa-instagram"></i> Instagram</a>
-                    <a target="_BLANK" class="pill" style="background-color: #55CDFC;" href="https://ko-fi.com/mythicalcuddles"><i class="fa fa-heart"></i> Ko-Fi</a>
-                </div>
-                
-            <!-- 
-                <br><br><br>
-                <section class="tile">
-                    <header>
-                        <a target="_BLANK" href="https://docs.mythicalcuddl.es/" class="tileButton" style="margin: 0px 20px 10px 20px; background-color: #FCA0E3;"><h2>> mythical.docs_</h2></a>
-                    </header>
-                    <p>
-                        This is the link to my documentation website. It contains all the documentation for my VR projects, tutorials, and other projects I've worked on. <br />
-                        It also contains a blog section where I'll be posting about my projects and other things I'm working on.
-                    </p>
-                </section>
-                
-                <br>
-            -->
-                <h1 class="sectionHeading">My Websites</h1>
-                <section class="tileContainer">
-                    <section class="tile">
-                        <header>
-                            <a target="_BLANK" href="https://melissabrennan.dev" class="tileButton" style="background-color: #e66da9;"><h2>melissabrennan.dev</h2></a>
-                        </header>
-                        <p>
-                            Nothing special, its just this website you're looking at right now where I display the projects I'm looking to share with everyone. 
-                            The source code for this website is available on GitHub and was inspired by <a target="_blank" href="https://eev.ee">eev.ee</a>. You should check her out too!
-                        </p>
-                        <ul class="tileLinks">
-                            <li>HTML/CSS</li>
-                            <li><a target="_BLANK" href="https://github.com/MythicalCuddles/melissabrennan.dev">Source Code</a></li>
-                            <li><a target="_BLANK" href="https://github.com/MythicalCuddles/melissabrennan.dev">melissabrennan.dev</a></li>
-                        </ul>
-                    </section>
-                    <section class="tile">
-                        <header>
-                            <a target="_BLANK" href="https://mythicalcuddl.es" class="tileButton" style="background-color: #7445cc;">
-                                <h2>mythicalcuddl.es</h2>
-                            </a>
-                        </header>
-                        <p>
-                            This domain just redirects to my Discord Server (invite link). I might do something with it in the future.
-                        </p>
-                        <ul class="tileLinks">
-                            <li>Coming Soon</li>
-                            <li><a target="_BLANK" href="https://github.com/MythicalCuddles/mythicalcuddl.es">Source Code</a></li>
-                            <li><a target="_BLANK" href="https://mythicalcuddl.es">mythicalcuddl.es</a></li>
-                        </ul>
-                    </section>
-                    <section class="tile">
-                        <header>
-                            <a target="_BLANK" href="https://mythicalcuddles.xyz" class="tileButton" style="background-color: #838383;"><h2>mythicalcuddles.xyz</h2></a>
-                        </header>
-                        <p>
-                            This domain just redirects to my Discord Server (invite link). I might do something with it in the future.
-                        </p>
-                        <ul class="tileLinks">
-                            <li>Coming Soon</li>
-                            <li><a target="_BLANK" href="https://github.com/MythicalCuddles/mythicalcuddles.xyz">Source Code</a></li>
-                            <li><a target="_BLANK" href="https://mythicalcuddles.xyz">mythicalcuddles.xyz</a></li>
-                        </ul>
-                    </section>
-                </section>
+                <div id="socialPills" data-social-container></div>
 
-                <h1 class="sectionHeading">VRChat // Unity3D & Blender</h1>
-                <section class="tile">
-                    <header>
-                        <a target="_BLANK" class="tileButton" style="background-color: #96eb8e; margin: 0px 20px 10px 20px;"><h2>What is VRChat?</h2></a>
-                    </header>
-                    <p>
-                        This whole section will be covering the creations I've made in Unity3D to work along with the VRChat world. VRChat is a free game which you can download from Steam or the Oculus store, which allows the players to 
-                        be in complete control of the content creation on the game. The game can be played on desktop or in Virtual Reality. I've launched a couple of worlds, working on a few more and helped out in a few. You can view them here.
-                    </p>
-                    <ul class="tileLinks">
-                        <li><a target="_BLANK" href="https://vrchat.com">VRChat Homepage</a></li>
-                        <li><a target="_BLANK" href="https://store.steampowered.com/app/438100/VRChat/">Steam Store</a></li>
-                        <li><a target="_BLANK" href="https://docs.vrchat.com/docs/what-is-udon">What is Udon?</a></li>
-                    </ul>
-                </section>
-                <br />
-                <section class="tileContainer">
-                    <section class="tile">
-                        <header>
-                            <a target="_BLANK" href="https://vrchat.com/home/launch?worldId=wrld_65aed793-367d-4251-8f33-aecd46243c0d" class="tileButton" style="background-color: #f89019;">
-                                <h2>The Lustful Wenches</h2>
-                                <time datetime="2022/02/18">18-02-2022</time>
-                            </a>
-                        </header>
-                        <p>
-                            <a href="images/vrchat_lustfulwenches.png" target="_blank"><img src="images/vrchat_lustfulwenches.png" alt=""></a>
-                        </p>
-                        <p>
-                            A tavern styled world for friends to travel to and chill. The world settings was developed by myself using a mix of C#, Udon and UdonSharp and include features such as toggling different mirrors, gameobjects and allowing for users to interact with colliders etc.
-                            <br>
-                            These scripts will be published on GitHub when completed and be used in the next collab project where additional scripts will be able to be implemented too. Plans to create a DnD themed world from this are in the works, along with scripts to have the world run smoothly.
-                        </p>
-                        <ul class="tileLinks">
-                            <li><img alt="Static Badge" src="https://img.shields.io/badge/Unity3D-blue?style=flat-square"></li>
-                            <li><img alt="Static Badge" src="https://img.shields.io/badge/Collab-Green?style=flat-square"></li>
-                            <li><a target="_BLANK" href="https://vrchat.com/home/launch?worldId=wrld_65aed793-367d-4251-8f33-aecd46243c0d"><img alt="Static Badge" src="https://img.shields.io/badge/View%20World-yellow?style=flat-square"></a></li>
-                            <li><img alt="Static Badge" src="https://img.shields.io/badge/Udon%2FUdonSharp-purple?style=flat-square"></li>
-                        </ul>
-                    </section>
-                    <section class="tile">
-                        <header>
-                            <a target="_BLANK" href="#" class="tileButton" style="background-color: #4976a0;">
-                                <h2>Murder 4 Paintings</h2>
-                                <time datetime="2021/11/19">19-11-2021</time>
-                            </a>
-                        </header>
-                        <p>
-                            <a href="images/vrchat_m4paintings.png" target="_blank"><img src="images/vrchat_m4paintings.png" alt=""></a>
-                        </p>
-                        <p>
-                            Murder 4 Paintings is an avatar prefab available over on my Discord. The prefab is attached to a private avatar in unity and uploaded to VRChat, allowing for the user to change the paintings in the popular game world known as Murder 4. 
-                            The asset takes advantage of world constraints and parent constraints in Unity, allowing for planes to be placed at specific points in the world to cover the paintings seen in the world.
-                        </p>
-                        <p>
-                            <a href="images/unity_m4paintings.png" target="_blank"><img src="images/unity_m4paintings.png" alt=""></a>
-                        </p>
-                        <ul class="tileLinks">
-                            <li><img alt="Static Badge" src="https://img.shields.io/badge/Unity3D-blue?style=flat-square"></li>
-				<li><img alt="Static Badge" src="https://img.shields.io/badge/Avatar%20Asset-yellow?style=flat-square"></li>
-                            <li><img alt="Static Badge" src="https://img.shields.io/badge/Not%20Maintained-red?style=flat-square"></li>
-                        </ul>
-                    </section>
-                    <section class="tile">
-                        <header>
-                            <a target="_BLANK" href="https://vrchat.com/home/launch?worldId=wrld_e2fa9d6b-4ee8-4bc8-bfd2-25892d4dd0a3" class="tileButton" style="background-color: #ead2f1;">
-                                <h2>Cuddles' Memories</h2>
-                                <time datetime="2020/10/18">18-10-2020</time>
-                            </a>
-                        </header>
-                        <p>
-                            <a href="images/vrchat_cuddlesmemories.png" target="_blank"><img src="images/vrchat_cuddlesmemories.png" alt=""></a>
-                        </p>
-                        <p>
-                            Cuddles' Memories was the first world I publically released in VRChat with showcases how Unity's Pro-Builder can be used to build a world. I also created different scripts to toggle systems such as the world's mirror, providing different options and toggle other portals.
-                        </p>
-                        <ul class="tileLinks">
-                            <li><img alt="Static Badge" src="https://img.shields.io/badge/Unity3D-blue?style=flat-square"></li>
-                            <li><a target="_BLANK" href="https://vrchat.com/home/launch?worldId=wrld_e2fa9d6b-4ee8-4bc8-bfd2-25892d4dd0a3"><img alt="Static Badge" src="https://img.shields.io/badge/View%20World-yellow?style=flat-square"></a></li>
-                            <li><img alt="Static Badge" src="https://img.shields.io/badge/Udon%2FUdonSharp-purple?style=flat-square"></li>
-                        </ul>
-                    </section>
-                </section>
-
-                <h1 class="sectionHeading">Libraries</h1>
-                <section class="tileContainer">
-                    <section class="tile">
-                        <header>
-                            <a class="tileButton" style="background-color: #8C84C1;">
-                                <h2>MelissaNET</h2>
-                            </a>
-                        </header>
-                        <p>
-                            MelissaNET is a C# library, which was created mainly to provide update functionality via online version checking for DiscordBot. It has been developed to provide additional features that can be used over multiple projects.
-                            <br />
-                            At the moment, MelissaNET is a private repository as I am working on updating a ReadMe file for it and provide better functionality for global use. It is however attached with the release versions of DiscordBot.
-                        </p>
-                        <ul class="tileLinks">
-                            <li>C# Library</li>
-                            <li><a target="_BLANK" href="https://github.com/MythicalCuddles/MelissaNet">Source Code</a> (Private Repo)</li>
-                        </ul>
-                    </section>
-                </section>
-
-                <h1 class="sectionHeading">Archived & Abandonware</h1>
-                <section class="tile">
-                    <header>
-                        <a target="_BLANK" class="tileButton" style="background-color: #96eb8e; margin: 0px 20px 10px 20px;"><h2>Archived & Abandonware</h2></a>
-                    </header>
-                    <p>
-                        Projects below this section have been Archived and Abandoned. They may not be working anymore or work as expected! Use with your own caution.
-                    </p>
-                </section>
-
-                <h1 class="sectionHeading">University Projects</h1>
-                <section class="tileContainer">
-                    <section class="tile">
-                        <header>
-                            <a target="_BLANK" href="https://github.com/MythicalCuddles/Book-Loaning-System" class="tileButton" style="background-color: #FF6663;">
-                                <h2>Book Loaning System</h2>
-                                <time datetime="2017/12/18">18-12-2017</time>
-                            </a>
-                        </header>
-                        <p>
-                            COM187 Software Development II Coursework 3 - 
-                            A system for a primary school class that records which fiction and non-fiction books are lent out to the pupils.
-                            <br />
-                            Since submitting the project, I've continued to work on this project. The source code will have new changes and isn't an actual repersentation of the submitted version. You can view the submitted version below along with the updated source code.
-                        </p>
-                        <ul class="tileLinks">
-                            <li>🏆</li>
-                            <li>Java</li>
-                            <li><a target="_BLANK" href="https://github.com/MythicalCuddles/Book-Loaning-System">Source Code</a></li>
-                            <li><a target="_BLANK" href="https://github.com/MythicalCuddles/Book-Loaning-System/releases/tag/1.0">Submitted Version</a></li>
-                        </ul>
-                    </section>
-                    <section class="tile">
-                        <header>
-                            <a target="_BLANK" href="https://github.com/MythicalCuddles/UU-DynamicWebAuthoring" class="tileButton" style="background-color: #FDFD97;">
-                                <h2>Dynamic Web Authoring</h2>
-                                <time datetime="2018/08/17">17-08-2020</time>
-                            </a>
-                        </header>
-                        <p>
-                            COM353 Dynamic Web Authoring
-                            <br />
-                            This repository contains both the learning logs and coursework project. The learning logs were created on a blog styled website where each entry is linked on the first page. 
-                            The coursework project was designed around the idea of a hotel reservation system using JavaScript for a booking and login system.
-                        </p>
-                        <ul class="tileLinks">
-                            <li>HTML, CSS & JS</li>
-                            <li><a target="_BLANK" href="https://github.com/MythicalCuddles/UU-DynamicWebAuthoring">Source Code</a></li>
-                        </ul>
-                    </section>
-                    <section class="tile">
-                        <header>
-                            <a class="tileButton" style="background-color: #FEB144;">
-                                <h2>Quiz Game</h2>
-                                <time datetime="2019/12/12">12-12-2019</time>
-                            </a>
-                        </header>
-                        <p>
-                            COM357 Coursework - 
-                            A quiz game filled with multiple-choice questions aiming to access the players knowledge of C++. The player is able to enter their name and select an avatar before begining the game.
-                            <br />
-                            This projects source code is currently in a private repository as I'm still working on the ReadMe file for the project. As soon as I've published that, the source code link will be visible below.
-                        </p>
-                        <ul class="tileLinks">
-                            <li>C++</li>
-                            <!--<li><a target="_BLANK" href="https://github.com/MythicalCuddles/Quiz-Game">Source Code</a> (Private Repo)</li>-->
-                        </ul>
-                    </section>
-                    <section class="tile">
-                        <header>
-                            <a target="_BLANK" href="https://github.com/MythicalCuddles/UU-HCI" class="tileButton" style="background-color: #FDFD97;">
-                                <h2>Booking System</h2>
-                                <time datetime="2018/08/17">17-08-2018</time>
-                            </a>
-                        </header>
-                        <p>
-                            COM308 HCI Coursework 3 - 
-                            A system designed as a Medical Practice Booking System. Project part of HCI, which focused on the design aspect rather than the functionality aspect.
-                        </p>
-                        <ul class="tileLinks">
-                            <li>HTML & CSS</li>
-                            <li><a target="_BLANK" href="https://github.com/MythicalCuddles/UU-HCI">Source Code</a></li>
-                        </ul>
-                    </section>
-                    <section class="tile">
-                        <header>
-                            <a target="_BLANK" href="https://github.com/MythicalCuddles/UU-SoftwareDevelopment" class="tileButton" style="background-color: #9EE09E;">
-                                <h2>Software Development</h2>
-                            </a>
-                        </header>
-                        <p>
-                            COM186 & COM187 Software Development - 
-                            An asortment of practical work I've done from these two modules.
-                        </p>
-                        <ul class="tileLinks">
-                            <li>Java</li>
-                            <li><a target="_BLANK" href="https://github.com/MythicalCuddles/UU-SoftwareDevelopment">Source Code</a></li>
-                        </ul>
-                    </section>
-                    <section class="tile">
-                        <header>
-                            <a target="_BLANK" href="https://github.com/MythicalCuddles/Introduction-to-Java-Programming-10th-Edition" class="tileButton" style="background-color: #9EC1CF;">
-                                <h2>Introduction to Java</h2>
-                            </a>
-                        </header>
-                        <p>
-                            Introduction to Java Programming 10th Edition - 
-                            All the practicals I've done from the Introduction to Java Programming 10th Edition book. These were only done during the COM186 & COM187 module dates, and may be updated in the future with more practical work.
-                        </p>
-                        <ul class="tileLinks">
-                            <li>Java</li>
-                            <li><a target="_BLANK" href="https://github.com/MythicalCuddles/Introduction-to-Java-Programming-10th-Edition">Source Code</a></li>
-                        </ul>
-                    </section>
-                    <section class="tile">
-                        <header>
-                            <a target="_BLANK" href="https://github.com/MythicalCuddles/UU-ComputerHardware" class="tileButton" style="background-color: #CC99C9;">
-                                <h2>Computer Hardware</h2>
-                            </a>
-                        </header>
-                        <p>
-                            COM181 Computer Hardware Coursework - 
-                            This is the coursework I did for Computer Hardware, which contains an Binary Adder Circuit as Assignment 1 and a Decimal to Roman Numerals Converter as Assignment 2. 
-                        </p>
-                        <ul class="tileLinks">
-                            <li>Assembly</li>
-                            <li><a target="_BLANK" href="https://github.com/MythicalCuddles/UU-ComputerHardware">Source Code</a></li>
-                        </ul>
-                    </section>
-                </section>
-
-                <h1 class="sectionHeading">Personal Projects</h1>
-                <section class="tileContainer">
-                    <section class="tile">
-                        <header>
-                            <a target="_BLANK" href="https://github.com/MythicalCuddles/DiscordBot" class="tileButton" style="background-color: #3088AE;">
-                                <h2>DiscordBot</h2>
-                            </a>
-                            <p>
-                                🌟 Contributed to the <a target="_BLANK" href="https://archiveprogram.github.com">2020 GitHub Arctic Code Vault</a>!
-                            </p>
-                        </header>
-                        <p>
-                            DiscordBot is a C# Bot for Discord which includes many features such as allowing users to create their own profiles, earn EXP to level up and compete for #1 on the leaderboard and many more features.
-                            <br />
-                            DiscordBot uses MySQL to store user, channel and guild data to be used by commands through the bot or to be viewed using DiscordBot Web.
-                        </p>
-                        <ul class="tileLinks">
-                            <li>C#</li>
-                            <li>MySQL</li>
-                            <li><a target="_BLANK" href="https://github.com/MythicalCuddles/DiscordBot">Source Code</a></li>
-                            <li><a target="_BLANK" href="https://github.com/MythicalCuddles/DiscordBot/releases">Latest Release</a></li>
-                            <li><a target="_BLANK" href="https://github.com/MythicalCuddles/DiscordBot/wiki">Wiki</a></li>
-                        </ul>
-                    </section>
-                    <section class="tile">
-                        <header>
-                            <a target="_BLANK" href="https://bot.mythicalcuddles.xyz" class="tileButton" style="background-color: #9D011B;">
-                                <h2>DiscordBot Web</h2>
-                                <time datetime="2022-08-14">08-2022</time>
-                            </a>
-                        </header>
-                        <p>
-                            DiscordBot Web is the web application that works along with DiscordBot. However, an instance of DiscordBot is required in order to have it working as the application creates and manages the required database tables and rows.
-                            <br />
-                            Currently, DiscordBot Web is not an open-sourced project, but is able to be viewed live. You can however produce your own web application using the information stored in MySQL provided by DiscordBot.
-                        </p>
-                        <ul class="tileLinks">
-                            <li>PHP</li>
-                            <li>MySQL</li>
-                            <li><a target="_BLANK" href="https://github.com/MythicalCuddles/DiscordBot-Web">Source Code</a></li>
-                            <li><a target="_BLANK" href="https://bot.mythicalcuddles.xyz"><del>Live</del></a></li>
-                        </ul>
-                    </section>
-                    <section class="tile">
-                        <header>
-                            <a target="_BLANK" href="https://github.com/MythicalCuddles/MogiiBot3" class="tileButton" style="background-color: #816A67;">
-                                <h2>MogiiBot3</h2>
-                                <time datetime="2018-06-00">06-2018</time>
-                            </a>
-                        </header>
-                        <p>
-                            MogiiBot is a C# Bot for Discord which was replaced by the DiscordBot project in 06-2018. It originally used JSON to store user files allowing users to have profiles provided by the bot along with other features.
-                            <br />
-                            Due to name changes and file changes, MogiiBot was archived and replaced by DiscordBot, which has more advanced features and better conventions.
-                        </p>
-                        <ul class="tileLinks">
-                            <li>C#</li>
-                            <li><a target="_BLANK" href="https://github.com/MythicalCuddles/MogiiBot3">Source Code</a></li>
-                        </ul>
-                    </section>
-                    <section class="tile">
-                        <header>
-                            <a target="_BLANK" href="https://genderessence.org.uk" class="tileButton" style="background-color: #570743;">
-                                <h2>Gender Essence</h2>
-                            </a>
-                        </header>
-                        <p>
-                            Gender Essence was one of my first websites I helped get online using a Content Management System (CMS). The use of the CMS allowed for the client to go on at a later time and alter the content of the websites to her liking, allowing for the website to show up to date information which best suited her company.
-                            <br />
-                            My work done with Gender Essence provided me with my first insight to CMS and the power they're able to deliver to easily build websites and modify the content on the website.
-                        </p>
-                        <ul class="tileLinks">
-                            <li>HTML/CSS</li>
-                            <li>CMS</li>
-                            <li><a target="_BLANK" href="http://www.genderessence.org.uk/index.php"><del>Live</del></a></li>
-                            <li><a target="_BLANK" href="https://web.archive.org/web/20201130101037/http://genderessence.org.uk/">Wayback Machine</a></li>
-                        </ul>
-                    </section>
-                </section>
-
-                <!-- additional sections to be added in the future as I add more projects 
-                <h1 class="sectionHeading">Miscellany</h1>
-                <h1 class="sectionHeading">Abandonware</h1>-->
+                <div data-portfolio></div>
             </div>
 
             <div id="footer">
@@ -413,13 +32,34 @@
                 <span id="footCenter">
                     Background pattern from <a target="_BLANK" href="https://www.toptal.com/designers/subtlepatterns/">Toptal Subtle Patterns</a>
                     <br>
-                    <a target="_BLANK" href="https://melissabrennan.dev">melissabrennan.dev</a> • 
+                    <a target="_BLANK" href="https://melissabrennan.dev">melissabrennan.dev</a> •
                     <!--<a target="_BLANK" href="https://mythicalcuddles.xyz">mythicalcuddles.xyz</a> • -->
-		    <a target="_BLANK" href="https://mythicalcuddl.es">mythicalcuddl.es (Discord Invite)</a>
+                    <a target="_BLANK" href="https://mythicalcuddl.es">mythicalcuddl.es (Discord Invite)</a>
                     <br>
                     <a target="_BLANK" href="https://github.com/MythicalCuddles/melissabrennan.dev">Source Code</a>
                 </span>
             </div>
         </div>
+
+        <template id="category-template">
+            <div class="category">
+                <h1 class="sectionHeading"></h1>
+                <section class="tileContainer"></section>
+            </div>
+        </template>
+
+        <template id="tile-template">
+            <section class="tile">
+                <header>
+                    <a class="tileButton">
+                        <h2></h2>
+                        <time></time>
+                    </a>
+                    <p class="tileHeaderNote"></p>
+                </header>
+                <div class="tileContent"></div>
+                <ul class="tileLinks"></ul>
+            </section>
+        </template>
     </body>
 </html>
