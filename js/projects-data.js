@@ -95,15 +95,10 @@ const portfolioData = {
                         'These scripts will be published on GitHub when completed and be used in the next collab project where additional scripts will be able to be implemented too. Plans to create a DnD themed world from this are in the works, along with scripts to have the world run smoothly.'
                     ],
                     links: [
-                        { type: 'badge', src: 'https://img.shields.io/badge/Unity3D-blue?style=flat-square', alt: 'Unity3D' },
-                        { type: 'badge', src: 'https://img.shields.io/badge/Collab-Green?style=flat-square', alt: 'Collab' },
-                        {
-                            type: 'badge',
-                            src: 'https://img.shields.io/badge/View%20World-yellow?style=flat-square',
-                            alt: 'View World',
-                            url: 'https://vrchat.com/home/launch?worldId=wrld_65aed793-367d-4251-8f33-aecd46243c0d'
-                        },
-                        { type: 'badge', src: 'https://img.shields.io/badge/Udon%2FUdonSharp-purple?style=flat-square', alt: 'Udon/UdonSharp' }
+                        { type: 'text', text: 'Unity3D' },
+                        { type: 'text', text: 'Collab' },
+                        { type: 'text', text: 'View World' },
+                        { type: 'text', text: 'Udon/UdonSharp' }
                     ]
                 },
                 {
@@ -120,9 +115,9 @@ const portfolioData = {
                         'The asset takes advantage of world constraints and parent constraints in Unity, allowing for planes to be placed at specific points in the world to cover the paintings seen in the world.'
                     ],
                     links: [
-                        { type: 'badge', src: 'https://img.shields.io/badge/Unity3D-blue?style=flat-square', alt: 'Unity3D' },
-                        { type: 'badge', src: 'https://img.shields.io/badge/Avatar%20Asset-yellow?style=flat-square', alt: 'Avatar Asset' },
-                        { type: 'badge', src: 'https://img.shields.io/badge/Not%20Maintained-red?style=flat-square', alt: 'Not Maintained' }
+                        { type: 'text', text: 'Unity3D' },
+                        { type: 'text', text: 'Avatar Asset' },
+                        { type: 'text', text: 'Not Maintained' }
                     ]
                 },
                 {
@@ -137,14 +132,9 @@ const portfolioData = {
                         "Cuddles' Memories was the first world I publically released in VRChat with showcases how Unity's Pro-Builder can be used to build a world. I also created different scripts to toggle systems such as the world's mirror, providing different options and toggle other portals."
                     ],
                     links: [
-                        { type: 'badge', src: 'https://img.shields.io/badge/Unity3D-blue?style=flat-square', alt: 'Unity3D' },
-                        {
-                            type: 'badge',
-                            src: 'https://img.shields.io/badge/View%20World-yellow?style=flat-square',
-                            alt: 'View World',
-                            url: 'https://vrchat.com/home/launch?worldId=wrld_e2fa9d6b-4ee8-4bc8-bfd2-25892d4dd0a3'
-                        },
-                        { type: 'badge', src: 'https://img.shields.io/badge/Udon%2FUdonSharp-purple?style=flat-square', alt: 'Udon/UdonSharp' }
+                        { type: 'text', text: 'Unity3D' },
+                        { type: 'text', text: 'View World' },
+                        { type: 'text', text: 'Udon/UdonSharp' }
                     ]
                 }
             ]
