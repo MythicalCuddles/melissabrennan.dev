@@ -14,12 +14,11 @@ body {
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
-    padding: 5px;
+    padding: 12px;
     color: whitesmoke;
     text-align: left;
     overflow: hidden;
     background-color: rgba(141, 141, 141, 0.1);
-    padding: 5px;
     border-radius: 20px;
 }
 
@@ -94,7 +93,7 @@ h1.sectionHeading::after {
 
 .mainContent .tileContainer {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(412px, 412px));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     margin: 0px 0px 60px 0px;
     row-gap: 1em;
     column-gap: 1em;
@@ -223,23 +222,48 @@ ul.tileLinks li + li::before {
 
 #socialPills {
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
 }
 
 .pill {
     border: none;
     color: white;
-    padding: 5px 40px;
+    padding: 8px 18px;
     text-align: center;
     text-decoration: none;
-    font-size: 20px;
-    display: inline-block;
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     margin: 5px 3px;
     cursor: pointer;
     border-radius: 5px;
     width: auto;
-    box-shadow: 
+    box-shadow:
         inset 0 2em 1em -1em rgba(255, 255, 255, 0.125),
         inset 0 -2em 1em 1em rgba(0, 0, 0, 0.25),
         inset 0 0 0.25em rgba(255, 255, 255, 0.5);
     transition: box-shadow .1s linear, padding-top .1s linear;
+}
+
+@media (max-width: 720px) {
+    #container {
+        padding: 8px;
+    }
+
+    h1.sectionHeading {
+        font-size: 28px;
+    }
+
+    h1.sectionHeading::before,
+    h1.sectionHeading::after {
+        margin: 0 10px;
+    }
+
+    .mainContent {
+        margin: 0.5em;
+    }
 }
