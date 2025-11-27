@@ -72,6 +72,7 @@ const portfolioData = {
                     title: 'What is VRChat?',
                     url: null,
                     colorClass: 'bg-vrchat-green',
+                    fullRow: true,
                     description: [
                         'This whole section will be covering the creations I\'ve made in Unity3D to work along with the VRChat world. VRChat is a free game which you can download from Steam or the Oculus store, which allows the players to be in complete control of the content creation on the game. The game can be played on desktop or in Virtual Reality. I\'ve launched a couple of worlds, working on a few more and helped out in a few. You can view them here.'
                     ],
@@ -173,6 +174,7 @@ const portfolioData = {
                     title: 'Archived & Abandonware',
                     url: null,
                     colorClass: 'bg-vrchat-green',
+                    fullRow: true,
                     description: [
                         'Projects below this section have been Archived and Abandoned. They may not be working anymore or work as expected! Use with your own caution.'
                     ]

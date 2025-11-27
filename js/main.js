@@ -50,6 +50,10 @@ function buildTile(project) {
     const contentContainer = tile.querySelector('.tileContent');
     const linkList = tile.querySelector('.tileLinks');
 
+    if (project.fullRow) {
+        tile.classList.add('fullRow');
+    }
+
     title.textContent = project.title;
 
     if (project.url) {
@@ -111,7 +115,22 @@ function buildTile(project) {
                     const anchor = document.createElement('a');
                     anchor.target = '_BLANK';
                     anchor.href = item.url ?? '#';
-                    anchor.innerHTML = `${item.text}${item.note ?? ''}`;
+                    anchor.classList.add('tileLinkButton');
+
+                    const icon = document.createElement('i');
+                    icon.className = `${item.icon ?? 'fas fa-link'} tileLinkIcon`;
+                    anchor.appendChild(icon);
+
+                    const text = document.createElement('span');
+                    text.textContent = item.text ?? '';
+                    anchor.appendChild(text);
+
+                    if (item.note) {
+                        const note = document.createElement('small');
+                        note.classList.add('tileLinkNote');
+                        note.textContent = item.note;
+                        anchor.appendChild(note);
+                    }
                     li.appendChild(anchor);
                     break;
                 }
@@ -131,7 +150,10 @@ function buildTile(project) {
                     break;
                 }
                 default: {
-                    li.innerHTML = item.text ?? '';
+                    const chip = document.createElement('span');
+                    chip.classList.add('tileLinkButton', 'is-static');
+                    chip.textContent = item.text ?? '';
+                    li.appendChild(chip);
                 }
             }
             linkList.appendChild(li);
