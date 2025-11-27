@@ -12,12 +12,6 @@ const portfolioData = {
             url: 'https://instagram.com/mythicalcuddles',
             icon: 'fab fa-instagram',
             colorClass: 'bg-muted-gray'
-        },
-        {
-            label: 'Ko-Fi',
-            url: 'https://ko-fi.com/mythicalcuddles',
-            icon: 'fa fa-heart',
-            colorClass: 'bg-trans-blue'
         }
     ],
     categories: [
@@ -28,14 +22,12 @@ const portfolioData = {
                     title: 'melissabrennan.dev',
                     url: 'https://melissabrennan.dev',
                     colorClass: 'bg-web-primary',
-                    languages: ['HTML', 'CSS'],
+                    languages: ['HTML', 'CSS', 'JavaScript'],
                     description: [
-                        'Nothing special, its just this website you\'re looking at right now where I display the projects I\'m looking to share with everyone. The source code for this website is available on GitHub and was inspired by <a target="_blank" href="https://eev.ee">eev.ee</a>. You should check her out too!'
+                        'Nothing special, its just this website you\'re looking at right now where I display the projects I\'m looking to share with everyone. The source code for this website is available on GitHub.'
                     ],
                     links: [
-                        { type: 'text', text: 'HTML/CSS' },
-                        { type: 'link', text: 'Source Code', url: 'https://github.com/MythicalCuddles/melissabrennan.dev' },
-                        { type: 'link', text: 'melissabrennan.dev', url: 'https://github.com/MythicalCuddles/melissabrennan.dev' }
+                        { type: 'link', text: 'Source Code', url: 'https://github.com/MythicalCuddles/melissabrennan.dev' }
                     ]
                 },
                 {
@@ -44,12 +36,7 @@ const portfolioData = {
                     colorClass: 'bg-web-purple',
                     languages: ['HTML', 'CSS'],
                     description: [
-                        'This domain just redirects to my Discord Server (invite link). I might do something with it in the future.'
-                    ],
-                    links: [
-                        { type: 'text', text: 'Coming Soon' },
-                        { type: 'link', text: 'Source Code', url: 'https://github.com/MythicalCuddles/mythicalcuddl.es' },
-                        { type: 'link', text: 'mythicalcuddl.es', url: 'https://mythicalcuddl.es' }
+                        'This domain just redirects to my linktree. I might do something with it in the future.'
                     ]
                 },
                 {
@@ -59,11 +46,20 @@ const portfolioData = {
                     languages: ['HTML', 'CSS'],
                     description: [
                         'This domain just redirects to my Discord Server (invite link). I might do something with it in the future.'
-                    ],
-                    links: [
-                        { type: 'text', text: 'Coming Soon' },
-                        { type: 'link', text: 'Source Code', url: 'https://github.com/MythicalCuddles/mythicalcuddles.xyz' },
-                        { type: 'link', text: 'mythicalcuddles.xyz', url: 'https://mythicalcuddles.xyz' }
+                    ]
+                }
+            ]
+        },
+        {
+            title: 'Games',
+            projects: [
+                {
+                    title: 'What is this???',
+                    colorClass: 'bg',
+                    fullRow: true,
+                    description: [
+                        'I\'m working on a few games in the background... Though they won\'t be open sourced, I\'d still like to share them with you when the time comes.',
+                        'Stay tuned!'
                     ]
                 }
             ]
@@ -76,7 +72,6 @@ const portfolioData = {
                     url: null,
                     colorClass: 'bg-vrchat-green',
                     fullRow: true,
-                    languages: ['Unity3D'],
                     description: [
                         'This whole section will be covering the creations I\'ve made in Unity3D to work along with the VRChat world. VRChat is a free game which you can download from Steam or the Oculus store, which allows the players to be in complete control of the content creation on the game. The game can be played on desktop or in Virtual Reality. I\'ve launched a couple of worlds, working on a few more and helped out in a few. You can view them here.'
                     ],
@@ -100,10 +95,8 @@ const portfolioData = {
                         'These scripts will be published on GitHub when completed and be used in the next collab project where additional scripts will be able to be implemented too. Plans to create a DnD themed world from this are in the works, along with scripts to have the world run smoothly.'
                     ],
                     links: [
-                        { type: 'text', text: 'Unity3D' },
                         { type: 'text', text: 'Collab' },
-                        { type: 'text', text: 'View World' },
-                        { type: 'text', text: 'Udon/UdonSharp' }
+                        { type: 'text', text: 'View World' }
                     ]
                 },
                 {
@@ -121,7 +114,6 @@ const portfolioData = {
                         'The asset takes advantage of world constraints and parent constraints in Unity, allowing for planes to be placed at specific points in the world to cover the paintings seen in the world.'
                     ],
                     links: [
-                        { type: 'text', text: 'Unity3D' },
                         { type: 'text', text: 'Avatar Asset' },
                         { type: 'text', text: 'Not Maintained' }
                     ]
@@ -139,9 +131,7 @@ const portfolioData = {
                         "Cuddles' Memories was the first world I publically released in VRChat with showcases how Unity's Pro-Builder can be used to build a world. I also created different scripts to toggle systems such as the world's mirror, providing different options and toggle other portals."
                     ],
                     links: [
-                        { type: 'text', text: 'Unity3D' },
-                        { type: 'text', text: 'View World' },
-                        { type: 'text', text: 'Udon/UdonSharp' }
+                        { type: 'text', text: 'View World' }
                     ]
                 }
             ]
@@ -157,10 +147,6 @@ const portfolioData = {
                     description: [
                         'MelissaNET is a C# library, which was created mainly to provide update functionality via online version checking for DiscordBot. It has been developed to provide additional features that can be used over multiple projects.',
                         "At the moment, MelissaNET is a private repository as I am working on updating a ReadMe file for it and provide better functionality for global use. It is however attached with the release versions of DiscordBot."
-                    ],
-                    links: [
-                        { type: 'text', text: 'C# Library' },
-                        { type: 'link', text: 'Source Code', url: 'https://github.com/MythicalCuddles/MelissaNet', note: ' (Private Repo)' }
                     ]
                 }
             ]
@@ -186,16 +172,13 @@ const portfolioData = {
                     title: 'Book Loaning System',
                     url: 'https://github.com/MythicalCuddles/Book-Loaning-System',
                     colorClass: 'bg-uni-red',
-                    languages: ['Java'],
+                    languages: ['Java', '🏆'],
                     date: '2017/12/18',
                     description: [
                         'COM187 Software Development II Coursework 3 - A system for a primary school class that records which fiction and non-fiction books are lent out to the pupils.',
                         "Since submitting the project, I've continued to work on this project. The source code will have new changes and isn't an actual repersentation of the submitted version. You can view the submitted version below along with the updated source code."
                     ],
                     links: [
-                        { type: 'text', text: '🏆' },
-                        { type: 'text', text: 'Java' },
-                        { type: 'link', text: 'Source Code', url: 'https://github.com/MythicalCuddles/Book-Loaning-System' },
                         { type: 'link', text: 'Submitted Version', url: 'https://github.com/MythicalCuddles/Book-Loaning-System/releases/tag/1.0' }
                     ]
                 },
@@ -208,10 +191,6 @@ const portfolioData = {
                     description: [
                         'COM353 Dynamic Web Authoring',
                         'This repository contains both the learning logs and coursework project. The learning logs were created on a blog styled website where each entry is linked on the first page. The coursework project was designed around the idea of a hotel reservation system using JavaScript for a booking and login system.'
-                    ],
-                    links: [
-                        { type: 'text', text: 'HTML, CSS & JS' },
-                        { type: 'link', text: 'Source Code', url: 'https://github.com/MythicalCuddles/UU-DynamicWebAuthoring' }
                     ]
                 },
                 {
@@ -222,10 +201,7 @@ const portfolioData = {
                     date: '2019/12/12',
                     description: [
                         'COM357 Coursework - A quiz game filled with multiple-choice questions aiming to access the players knowledge of C++. The player is able to enter their name and select an avatar before begining the game.',
-                        "This projects source code is currently in a private repository as I'm still working on the ReadMe file for the project. As soon as I've published that, the source code link will be visible below."
-                    ],
-                    links: [
-                        { type: 'text', text: 'C++' }
+                        "This projects source code is currently in a private repository as I'm still working on the ReadMe file for the project. As soon as I've published that, the source code link will be updated above."
                     ]
                 },
                 {
@@ -236,10 +212,6 @@ const portfolioData = {
                     date: '2018/08/17',
                     description: [
                         'COM308 HCI Coursework 3 - A system designed as a Medical Practice Booking System. Project part of HCI, which focused on the design aspect rather than the functionality aspect.'
-                    ],
-                    links: [
-                        { type: 'text', text: 'HTML & CSS' },
-                        { type: 'link', text: 'Source Code', url: 'https://github.com/MythicalCuddles/UU-HCI' }
                     ]
                 },
                 {
@@ -249,10 +221,6 @@ const portfolioData = {
                     languages: ['Java'],
                     description: [
                         'COM186 & COM187 Software Development - An asortment of practical work I\'ve done from these two modules.'
-                    ],
-                    links: [
-                        { type: 'text', text: 'Java' },
-                        { type: 'link', text: 'Source Code', url: 'https://github.com/MythicalCuddles/UU-SoftwareDevelopment' }
                     ]
                 },
                 {
@@ -262,10 +230,6 @@ const portfolioData = {
                     languages: ['Java'],
                     description: [
                         'Introduction to Java Programming 10th Edition - All the practicals I\'ve done from the Introduction to Java Programming 10th Edition book. These were only done during the COM186 & COM187 module dates, and may be updated in the future with more practical work.'
-                    ],
-                    links: [
-                        { type: 'text', text: 'Java' },
-                        { type: 'link', text: 'Source Code', url: 'https://github.com/MythicalCuddles/Introduction-to-Java-Programming-10th-Edition' }
                     ]
                 },
                 {
@@ -275,10 +239,6 @@ const portfolioData = {
                     languages: ['Assembly'],
                     description: [
                         'COM181 Computer Hardware Coursework - This is the coursework I did for Computer Hardware, which contains an Binary Adder Circuit as Assignment 1 and a Decimal to Roman Numerals Converter as Assignment 2.'
-                    ],
-                    links: [
-                        { type: 'text', text: 'Assembly' },
-                        { type: 'link', text: 'Source Code', url: 'https://github.com/MythicalCuddles/UU-ComputerHardware' }
                     ]
                 }
             ]
@@ -297,28 +257,18 @@ const portfolioData = {
                         'DiscordBot uses MySQL to store user, channel and guild data to be used by commands through the bot or to be viewed using DiscordBot Web.'
                     ],
                     links: [
-                        { type: 'text', text: 'C#' },
-                        { type: 'text', text: 'MySQL' },
-                        { type: 'link', text: 'Source Code', url: 'https://github.com/MythicalCuddles/DiscordBot' },
                         { type: 'link', text: 'Latest Release', url: 'https://github.com/MythicalCuddles/DiscordBot/releases' },
                         { type: 'link', text: 'Wiki', url: 'https://github.com/MythicalCuddles/DiscordBot/wiki' }
                     ]
                 },
                 {
                     title: 'DiscordBot Web',
-                    url: 'https://bot.mythicalcuddles.xyz',
+                    url: 'https://github.com/MythicalCuddles/DiscordBot-Web',
                     colorClass: 'bg-personal-maroon',
                     languages: ['PHP', 'MySQL'],
                     date: '2022-08-14',
                     description: [
-                        'DiscordBot Web is the web application that works along with DiscordBot. However, an instance of DiscordBot is required in order to have it working as the application creates and manages the required database tables and rows.',
-                        'Currently, DiscordBot Web is not an open-sourced project, but is able to be viewed live. You can however produce your own web application using the information stored in MySQL provided by DiscordBot.'
-                    ],
-                    links: [
-                        { type: 'text', text: 'PHP' },
-                        { type: 'text', text: 'MySQL' },
-                        { type: 'link', text: 'Source Code', url: 'https://github.com/MythicalCuddles/DiscordBot-Web' },
-                        { type: 'link', text: '<del>Live</del>', url: 'https://bot.mythicalcuddles.xyz' }
+                        'DiscordBot Web is the web application that works along with DiscordBot. However, an instance of DiscordBot is required in order to have it working as the application creates and manages the required database tables and rows.'
                     ]
                 },
                 {
@@ -330,25 +280,18 @@ const portfolioData = {
                     description: [
                         'MogiiBot is a C# Bot for Discord which was replaced by the DiscordBot project in 06-2018. It originally used JSON to store user files allowing users to have profiles provided by the bot along with other features.',
                         'Due to name changes and file changes, MogiiBot was archived and replaced by DiscordBot, which has more advanced features and better conventions.'
-                    ],
-                    links: [
-                        { type: 'text', text: 'C#' },
-                        { type: 'link', text: 'Source Code', url: 'https://github.com/MythicalCuddles/MogiiBot3' }
                     ]
                 },
                 {
                     title: 'Gender Essence',
                     url: 'https://genderessence.org.uk',
                     colorClass: 'bg-personal-plum',
-                    languages: ['HTML', 'CSS'],
+                    languages: ['CMS'],
                     description: [
                         "Gender Essence was one of my first websites I helped get online using a Content Management System (CMS). The use of the CMS allowed for the client to go on at a later time and alter the content of the websites to her liking, allowing for the website to show up to date information which best suited her company.",
                         "My work done with Gender Essence provided me with my first insight to CMS and the power they're able to deliver to easily build websites and modify the content on the website."
                     ],
                     links: [
-                        { type: 'text', text: 'HTML/CSS' },
-                        { type: 'text', text: 'CMS' },
-                        { type: 'link', text: '<del>Live</del>', url: 'http://www.genderessence.org.uk/index.php' },
                         { type: 'link', text: 'Wayback Machine', url: 'https://web.archive.org/web/20201130101037/http://genderessence.org.uk/' }
                     ]
                 }
