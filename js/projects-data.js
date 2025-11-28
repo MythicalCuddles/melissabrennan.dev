@@ -5,12 +5,30 @@ const portfolioData = {
             label: 'GitHub',
             url: 'https://github.com/mythicalcuddles',
             icon: 'fab fa-github',
+            colorClass: 'bg-muted-gray'
+        },
+        {
+            label: 'SoundCloud',
+            url: 'https://soundcloud.com/mythicalcuddles',
+            icon: 'fab fa-soundcloud',
             colorClass: 'bg-trans-pink'
         },
         {
             label: 'Instagram',
             url: 'https://instagram.com/mythicalcuddles',
             icon: 'fab fa-instagram',
+            colorClass: 'bg-muted-gray'
+        },
+        {
+            label: 'YouTube',
+            url: 'https://www.youtube.com/@mythicalcuddles',
+            icon: 'fab fa-youtube',
+            colorClass: 'bg-trans-pink'
+        },
+        {
+            label: 'LinkTree',
+            url: 'https://linktr.ee/mythicalcuddles',
+            icon: 'fa fa-server',
             colorClass: 'bg-muted-gray'
         }
     ],
