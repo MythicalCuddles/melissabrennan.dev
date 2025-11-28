@@ -103,8 +103,10 @@ const portfolioData = {
                     title: 'The Lustful Wenches',
                     url: 'https://vrchat.com/home/launch?worldId=wrld_65aed793-367d-4251-8f33-aecd46243c0d',
                     colorClass: 'bg-vrchat-orange',
-                    languages: ['Unity3D', 'C#', 'Udon/UdonSharp'],
+                    languages: ['Unity3D', 'Udon(Sharp)'],
                     date: '2022/02/18',
+                    fullRow: true,
+                    headerNote: 'A VRChat World Collaboration with Erzomb',
                     content: [
                         { type: 'image', src: 'images/vrchat_lustfulwenches.png', alt: '' }
                     ],
@@ -116,13 +118,14 @@ const portfolioData = {
                         { type: 'text', text: 'Collab' },
                         { type: 'text', text: 'View World' }
                     ]
-                },
+                }/*,
                 {
                     title: 'Murder 4 Paintings',
                     url: null,
                     colorClass: 'bg-vrchat-blue',
                     languages: ['Unity3D'],
                     date: '2021/11/19',
+                    fullRow: true,
                     content: [
                         { type: 'image', src: 'images/vrchat_m4paintings.png', alt: '' },
                         { type: 'image', src: 'images/unity_m4paintings.png', alt: '' }
@@ -151,7 +154,7 @@ const portfolioData = {
                     links: [
                         { type: 'text', text: 'View World' }
                     ]
-                }
+                }*/
             ]
         },
         {
