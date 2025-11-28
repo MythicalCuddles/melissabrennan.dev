@@ -5,12 +5,30 @@ const portfolioData = {
             label: 'GitHub',
             url: 'https://github.com/mythicalcuddles',
             icon: 'fab fa-github',
+            colorClass: 'bg-muted-gray'
+        },
+        {
+            label: 'SoundCloud',
+            url: 'https://soundcloud.com/mythicalcuddles',
+            icon: 'fab fa-soundcloud',
             colorClass: 'bg-trans-pink'
         },
         {
             label: 'Instagram',
             url: 'https://instagram.com/mythicalcuddles',
             icon: 'fab fa-instagram',
+            colorClass: 'bg-muted-gray'
+        },
+        {
+            label: 'YouTube',
+            url: 'https://www.youtube.com/@mythicalcuddles',
+            icon: 'fab fa-youtube',
+            colorClass: 'bg-trans-pink'
+        },
+        {
+            label: 'LinkTree',
+            url: 'https://linktr.ee/mythicalcuddles',
+            icon: 'fa fa-server',
             colorClass: 'bg-muted-gray'
         }
     ],
@@ -65,7 +83,7 @@ const portfolioData = {
             ]
         },
         {
-            title: 'VRChat // Unity3D & Blender',
+            title: 'VRChat',
             projects: [
                 {
                     title: 'What is VRChat?',
@@ -77,7 +95,6 @@ const portfolioData = {
                     ],
                     links: [
                         { type: 'link', text: 'VRChat Homepage', url: 'https://vrchat.com' },
-                        { type: 'link', text: 'Steam Store', url: 'https://store.steampowered.com/app/438100/VRChat/' },
                         { type: 'link', text: 'What is Udon?', url: 'https://docs.vrchat.com/docs/what-is-udon' }
                     ]
                 },
@@ -85,8 +102,9 @@ const portfolioData = {
                     title: 'The Lustful Wenches',
                     url: 'https://vrchat.com/home/launch?worldId=wrld_65aed793-367d-4251-8f33-aecd46243c0d',
                     colorClass: 'bg-vrchat-orange',
-                    languages: ['Unity3D', 'C#', 'Udon/UdonSharp'],
+                    languages: ['Unity3D', 'Udon(Sharp)'],
                     date: '2022/02/18',
+                    fullRow: true,
                     content: [
                         { type: 'image', src: 'images/vrchat_lustfulwenches.png', alt: '' }
                     ],
@@ -95,16 +113,16 @@ const portfolioData = {
                         'These scripts will be published on GitHub when completed and be used in the next collab project where additional scripts will be able to be implemented too. Plans to create a DnD themed world from this are in the works, along with scripts to have the world run smoothly.'
                     ],
                     links: [
-                        { type: 'text', text: 'Collab' },
-                        { type: 'text', text: 'View World' }
+                        { type: 'link', text: 'View World', url:'https://vrchat.com/home/launch?worldId=wrld_65aed793-367d-4251-8f33-aecd46243c0d' }
                     ]
-                },
+                }/*,
                 {
                     title: 'Murder 4 Paintings',
                     url: null,
                     colorClass: 'bg-vrchat-blue',
                     languages: ['Unity3D'],
                     date: '2021/11/19',
+                    fullRow: true,
                     content: [
                         { type: 'image', src: 'images/vrchat_m4paintings.png', alt: '' },
                         { type: 'image', src: 'images/unity_m4paintings.png', alt: '' }
@@ -133,25 +151,10 @@ const portfolioData = {
                     links: [
                         { type: 'text', text: 'View World' }
                     ]
-                }
+                }*/
             ]
         },
-        {
-            title: 'Libraries',
-            projects: [
-                {
-                    title: 'MelissaNET',
-                    url: null,
-                    colorClass: 'bg-uni-purple',
-                    languages: ['C#'],
-                    description: [
-                        'MelissaNET is a C# library, which was created mainly to provide update functionality via online version checking for DiscordBot. It has been developed to provide additional features that can be used over multiple projects.',
-                        "At the moment, MelissaNET is a private repository as I am working on updating a ReadMe file for it and provide better functionality for global use. It is however attached with the release versions of DiscordBot."
-                    ]
-                }
-            ]
-        },
-        {
+        /*{
             title: 'Archived & Abandonware',
             projects: [
                 {
@@ -164,15 +167,117 @@ const portfolioData = {
                     ]
                 }
             ]
+        },*/
+        {
+            title: 'Personal Projects',
+            projects: [
+                {
+                    title: 'Notice',
+                    colorClass: 'bg-vrchat-green',
+                    fullRow: true,
+                    description: [
+                        'Projects below have been Archived as they are past projects that I no longer work on. They may not be working anymore or work as expected! Use with your own caution.'
+                    ]
+                },
+                {
+                    title: 'DiscordBot',
+                    url: 'https://github.com/MythicalCuddles/DiscordBot',
+                    colorClass: 'bg-personal-blue',
+                    languages: ['C#', 'MySQL'],
+                    headerNote: '🌟 Contributed to the <a target="_BLANK" href="https://archiveprogram.github.com">2020 GitHub Arctic Code Vault</a>!',
+                    description: [
+                        'DiscordBot is a C# Bot for Discord which includes many features such as allowing users to create their own profiles, earn EXP to level up and compete for #1 on the leaderboard and many more features.',
+                        'DiscordBot uses MySQL to store user, channel and guild data to be used by commands through the bot or to be viewed using DiscordBot Web.'
+                    ],
+                    links: [
+                        { type: 'link', text: 'Latest Release', url: 'https://github.com/MythicalCuddles/DiscordBot/releases' },
+                        { type: 'link', text: 'Wiki', url: 'https://github.com/MythicalCuddles/DiscordBot/wiki' }
+                    ]
+                },
+                {
+                    title: 'DiscordBot Web',
+                    url: 'https://github.com/MythicalCuddles/DiscordBot-Web',
+                    colorClass: 'bg-personal-maroon',
+                    languages: ['PHP', 'MySQL'],
+                    date: '2022-08-14',
+                    description: [
+                        'DiscordBot Web is the web application that works along with DiscordBot. However, an instance of DiscordBot is required in order to have it working as the application creates and manages the required database tables and rows.'
+                    ]
+                },
+                {
+                    title: 'MogiiBot3',
+                    url: 'https://github.com/MythicalCuddles/MogiiBot3',
+                    colorClass: 'bg-personal-brown',
+                    languages: ['C#'],
+                    date: '2018-06-00',
+                    description: [
+                        'MogiiBot is a C# Bot for Discord which was replaced by the DiscordBot project in 06-2018. It originally used JSON to store user files allowing users to have profiles provided by the bot along with other features.',
+                        'Due to name changes and file changes, MogiiBot was archived and replaced by DiscordBot, which has more advanced features and better conventions.'
+                    ]
+                },
+                {
+                    title: 'MelissaNET',
+                    url: null,
+                    colorClass: 'bg-uni-purple',
+                    languages: ['C# Library'],
+                    description: [
+                        'MelissaNET is a C# library, which was created mainly to provide update functionality via online version checking for DiscordBot. It has been developed to provide additional features that can be used over multiple projects.',
+                        "At the moment, MelissaNET is a private repository as I am working on updating a ReadMe file for it and provide better functionality for global use. It is however attached with the release versions of DiscordBot."
+                    ]
+                },
+                {
+                    title: 'Gender Essence',
+                    url: 'https://genderessence.org.uk',
+                    colorClass: 'bg-personal-plum',
+                    languages: ['CMS', 'HTML', 'CSS'],
+                    description: [
+                        "Gender Essence was one of my first websites I helped get online using a Content Management System (CMS). The use of the CMS allowed for the client to go on at a later time and alter the content of the websites to her liking, allowing for the website to show up to date information which best suited her company.",
+                        "My work done with Gender Essence provided me with my first insight to CMS and the power they're able to deliver to easily build websites and modify the content on the website."
+                    ],
+                    links: [
+                        { type: 'link', text: 'Wayback Machine', url: 'https://web.archive.org/web/20201130101037/http://genderessence.org.uk/' }
+                    ]
+                }
+            ]
+        },
+        {
+            title: 'DJ Sets',
+            projects: [
+                {
+                    title: '(UK) Happy Hardcore',
+                    url: 'https://github.com/MythicalCuddles/Book-Loaning-System',
+                    colorClass: 'bg-uni-red',
+                    links: [
+                        { type: 'link', text: 'Berserk IV - 27th July 2024', url: 'https://youtu.be/qKHb6YY0cPg' },
+                        { type: 'link', text: 'Popup - 10th May 2024', url: 'https://youtu.be/VH_DLvnsgXM' }
+                    ]
+                },
+                {
+                    title: 'Trance',
+                    url: 'https://github.com/MythicalCuddles/Book-Loaning-System',
+                    colorClass: 'bg-uni-red',
+                    links: [
+                        { type: 'link', text: 'Popup - 27th September 2024', url: 'https://youtu.be/8ZQRPaIT82U' }
+                    ]
+                }
+            ]
         },
         {
             title: 'University Projects',
             projects: [
                 {
+                    title: 'Notice',
+                    colorClass: 'bg-vrchat-green',
+                    fullRow: true,
+                    description: [
+                        'Projects below have been Archived as they were made as part of my University Course. They may not be working anymore or work as expected! Use with your own caution.'
+                    ]
+                },
+                {
                     title: 'Book Loaning System',
                     url: 'https://github.com/MythicalCuddles/Book-Loaning-System',
                     colorClass: 'bg-uni-red',
-                    languages: ['Java', '🏆'],
+                    languages: ['100% 🏆', 'Java'],
                     date: '2017/12/18',
                     description: [
                         'COM187 Software Development II Coursework 3 - A system for a primary school class that records which fiction and non-fiction books are lent out to the pupils.',
@@ -239,60 +344,6 @@ const portfolioData = {
                     languages: ['Assembly'],
                     description: [
                         'COM181 Computer Hardware Coursework - This is the coursework I did for Computer Hardware, which contains an Binary Adder Circuit as Assignment 1 and a Decimal to Roman Numerals Converter as Assignment 2.'
-                    ]
-                }
-            ]
-        },
-        {
-            title: 'Personal Projects',
-            projects: [
-                {
-                    title: 'DiscordBot',
-                    url: 'https://github.com/MythicalCuddles/DiscordBot',
-                    colorClass: 'bg-personal-blue',
-                    languages: ['C#', 'MySQL'],
-                    headerNote: '🌟 Contributed to the <a target="_BLANK" href="https://archiveprogram.github.com">2020 GitHub Arctic Code Vault</a>!',
-                    description: [
-                        'DiscordBot is a C# Bot for Discord which includes many features such as allowing users to create their own profiles, earn EXP to level up and compete for #1 on the leaderboard and many more features.',
-                        'DiscordBot uses MySQL to store user, channel and guild data to be used by commands through the bot or to be viewed using DiscordBot Web.'
-                    ],
-                    links: [
-                        { type: 'link', text: 'Latest Release', url: 'https://github.com/MythicalCuddles/DiscordBot/releases' },
-                        { type: 'link', text: 'Wiki', url: 'https://github.com/MythicalCuddles/DiscordBot/wiki' }
-                    ]
-                },
-                {
-                    title: 'DiscordBot Web',
-                    url: 'https://github.com/MythicalCuddles/DiscordBot-Web',
-                    colorClass: 'bg-personal-maroon',
-                    languages: ['PHP', 'MySQL'],
-                    date: '2022-08-14',
-                    description: [
-                        'DiscordBot Web is the web application that works along with DiscordBot. However, an instance of DiscordBot is required in order to have it working as the application creates and manages the required database tables and rows.'
-                    ]
-                },
-                {
-                    title: 'MogiiBot3',
-                    url: 'https://github.com/MythicalCuddles/MogiiBot3',
-                    colorClass: 'bg-personal-brown',
-                    languages: ['C#'],
-                    date: '2018-06-00',
-                    description: [
-                        'MogiiBot is a C# Bot for Discord which was replaced by the DiscordBot project in 06-2018. It originally used JSON to store user files allowing users to have profiles provided by the bot along with other features.',
-                        'Due to name changes and file changes, MogiiBot was archived and replaced by DiscordBot, which has more advanced features and better conventions.'
-                    ]
-                },
-                {
-                    title: 'Gender Essence',
-                    url: 'https://genderessence.org.uk',
-                    colorClass: 'bg-personal-plum',
-                    languages: ['CMS'],
-                    description: [
-                        "Gender Essence was one of my first websites I helped get online using a Content Management System (CMS). The use of the CMS allowed for the client to go on at a later time and alter the content of the websites to her liking, allowing for the website to show up to date information which best suited her company.",
-                        "My work done with Gender Essence provided me with my first insight to CMS and the power they're able to deliver to easily build websites and modify the content on the website."
-                    ],
-                    links: [
-                        { type: 'link', text: 'Wayback Machine', url: 'https://web.archive.org/web/20201130101037/http://genderessence.org.uk/' }
                     ]
                 }
             ]

@@ -139,9 +139,9 @@ h1.sectionHeading::after {
 }
 
 .mainContent .tile img {
-    max-width: 100%;
+    max-width: 80%;
     position: relative;
-    border-radius: 10px 50px;
+    border-radius: 10px;
     text-decoration: none;
 }
 
@@ -367,6 +367,7 @@ ul.tileLinks li {
 .bg-personal-maroon { --tile-bg: #9D011B; }
 .bg-personal-brown { --tile-bg: #816A67; }
 .bg-personal-plum { --tile-bg: #570743; }
+.bg-personal-darkred { --tile-bg: #88290c; }
 
 .tileHeaderNote {
     margin: 6px 0 0;
