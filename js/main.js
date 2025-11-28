@@ -27,7 +27,7 @@ function showJsWarning() {
 
 function renderSocialLinks() {
     const socialContainer = document.querySelector('[data-social-container]');
-    if (!socialContainer || !portfolioData?.socialLinks) return;
+    if (!socialContainer || typeof portfolioData === 'undefined' || !portfolioData.socialLinks) return;
 
     portfolioData.socialLinks.forEach((link) => {
         const anchor = document.createElement('a');
@@ -36,7 +36,7 @@ function renderSocialLinks() {
             anchor.classList.add(link.colorClass);
         }
         anchor.target = '_BLANK';
-        anchor.href = link.url ?? '#';
+        anchor.href = link && link.url ? link.url : '#';
         anchor.innerHTML = `<i class="${link.icon}"></i> ${link.label}`;
         socialContainer.appendChild(anchor);
     });
@@ -44,7 +44,7 @@ function renderSocialLinks() {
 
 function renderPortfolio() {
     const contentRoot = document.querySelector('[data-portfolio]');
-    if (!contentRoot || !portfolioData?.categories) return;
+    if (!contentRoot || typeof portfolioData === 'undefined' || !portfolioData.categories) return;
 
     portfolioData.categories.forEach((category) => {
         const categoryNode = cloneTemplate('category-template');
@@ -88,7 +88,7 @@ function buildTile(project) {
         button.classList.add(project.colorClass);
     }
 
-    if (project.languages?.length) {
+    if (project.languages && project.languages.length) {
         languagesLine.textContent = project.languages.join(' • ');
     } else {
         languagesLine.remove();
@@ -116,7 +116,7 @@ function buildTile(project) {
                 anchor.target = '_blank';
                 const image = document.createElement('img');
                 image.src = block.src;
-                image.alt = block.alt ?? '';
+                image.alt = block && block.alt ? block.alt : '';
                 anchor.appendChild(image);
                 paragraph.appendChild(anchor);
                 contentContainer.appendChild(paragraph);
@@ -141,15 +141,15 @@ function buildTile(project) {
                 case 'link': {
                     const anchor = document.createElement('a');
                     anchor.target = '_BLANK';
-                    anchor.href = item.url ?? '#';
+                    anchor.href = item && item.url ? item.url : '#';
                     anchor.classList.add('tileLinkButton');
 
                     const icon = document.createElement('i');
-                    icon.className = `${item.icon ?? 'fas fa-link'} tileLinkIcon`;
+                    icon.className = `${item && item.icon ? item.icon : 'fas fa-link'} tileLinkIcon`;
                     anchor.appendChild(icon);
 
                     const text = document.createElement('span');
-                    text.textContent = item.text ?? '';
+                    text.textContent = item && item.text ? item.text : '';
                     anchor.appendChild(text);
 
                     if (item.note) {
@@ -163,7 +163,7 @@ function buildTile(project) {
                 }
                 case 'badge': {
                     const badgeImage = document.createElement('img');
-                    badgeImage.alt = item.alt ?? item.text ?? '';
+                    badgeImage.alt = item && item.alt ? item.alt : item && item.text ? item.text : '';
                     badgeImage.src = item.src;
                     if (item.url) {
                         const anchor = document.createElement('a');
@@ -179,7 +179,7 @@ function buildTile(project) {
                 default: {
                     const chip = document.createElement('span');
                     chip.classList.add('tileLinkButton', 'is-static');
-                    chip.textContent = item.text ?? '';
+                    chip.textContent = item && item.text ? item.text : '';
                     li.appendChild(chip);
                 }
             }
