@@ -105,7 +105,6 @@ const portfolioData = {
                     languages: ['Unity3D', 'Udon(Sharp)'],
                     date: '2022/02/18',
                     fullRow: true,
-                    headerNote: 'A VRChat World Collaboration with Erzomb',
                     content: [
                         { type: 'image', src: 'images/vrchat_lustfulwenches.png', alt: '' }
                     ],
@@ -242,6 +241,28 @@ const portfolioData = {
             ]
         },
         {
+            title: 'DJ Sets',
+            projects: [
+                {
+                    title: '(UK) Happy Hardcore',
+                    url: 'https://github.com/MythicalCuddles/Book-Loaning-System',
+                    colorClass: 'bg-uni-red',
+                    links: [
+                        { type: 'link', text: 'Berserk IV - 27th July 2024', url: 'https://youtu.be/qKHb6YY0cPg' },
+                        { type: 'link', text: 'Popup - 10th May 2024', url: 'https://youtu.be/VH_DLvnsgXM' }
+                    ]
+                },
+                {
+                    title: 'Trance',
+                    url: 'https://github.com/MythicalCuddles/Book-Loaning-System',
+                    colorClass: 'bg-uni-red',
+                    links: [
+                        { type: 'link', text: 'Popup - 27th September 2024', url: 'https://youtu.be/8ZQRPaIT82U' }
+                    ]
+                }
+            ]
+        },
+        {
             title: 'University Projects',
             projects: [
                 {
@@ -256,7 +277,7 @@ const portfolioData = {
                     title: 'Book Loaning System',
                     url: 'https://github.com/MythicalCuddles/Book-Loaning-System',
                     colorClass: 'bg-uni-red',
-                    languages: ['Java', '🏆'],
+                    languages: ['100% 🏆', 'Java'],
                     date: '2017/12/18',
                     description: [
                         'COM187 Software Development II Coursework 3 - A system for a primary school class that records which fiction and non-fiction books are lent out to the pupils.',
