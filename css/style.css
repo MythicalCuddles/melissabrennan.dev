@@ -139,9 +139,9 @@ h1.sectionHeading::after {
 }
 
 .mainContent .tile img {
-    max-width: 100%;
+    max-width: 80%;
     position: relative;
-    border-radius: 10px 50px;
+    border-radius: 10px;
     text-decoration: none;
 }
 
