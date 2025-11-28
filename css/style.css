@@ -367,6 +367,7 @@ ul.tileLinks li {
 .bg-personal-maroon { --tile-bg: #9D011B; }
 .bg-personal-brown { --tile-bg: #816A67; }
 .bg-personal-plum { --tile-bg: #570743; }
+.bg-personal-darkred { --tile-bg: #88290c; }
 
 .tileHeaderNote {
     margin: 6px 0 0;
