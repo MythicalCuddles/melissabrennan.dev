@@ -177,7 +177,7 @@ const portfolioData = {
                     colorClass: 'bg-vrchat-green',
                     fullRow: true,
                     description: [
-                        'Projects below have been Archived as they were made as part of my University Course. They may not be working anymore or work as expected! Use with your own caution.'
+                        'Projects below have been Archived as they are past projects that I no longer work on. They may not be working anymore or work as expected! Use with your own caution.'
                     ]
                 },
                 {
