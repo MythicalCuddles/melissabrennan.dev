@@ -5,31 +5,31 @@ const portfolioData = {
             label: 'GitHub',
             url: 'https://github.com/mythicalcuddles',
             icon: 'fab fa-github',
-            colorClass: 'bg-muted-gray'
+            colorClass: 'tile-tone-01'
         },
         {
             label: 'SoundCloud',
             url: 'https://soundcloud.com/mythicalcuddles',
             icon: 'fab fa-soundcloud',
-            colorClass: 'bg-trans-pink'
+            colorClass: 'tile-tone-02'
         },
         {
             label: 'Instagram',
             url: 'https://instagram.com/mythicalcuddles',
             icon: 'fab fa-instagram',
-            colorClass: 'bg-muted-gray'
+            colorClass: 'tile-tone-03'
         },
         {
             label: 'YouTube',
             url: 'https://www.youtube.com/@mythicalcuddles',
             icon: 'fab fa-youtube',
-            colorClass: 'bg-trans-pink'
+            colorClass: 'tile-tone-04'
         },
         {
             label: 'LinkTree',
             url: 'https://linktr.ee/mythicalcuddles',
             icon: 'fa fa-server',
-            colorClass: 'bg-muted-gray'
+            colorClass: 'tile-tone-05'
         }
     ],
     categories: [
@@ -39,7 +39,7 @@ const portfolioData = {
                 {
                     title: 'melissabrennan.dev',
                     url: 'https://melissabrennan.dev',
-                    colorClass: 'bg-web-primary',
+                    colorClass: 'tile-tone-06',
                     languages: ['HTML', 'CSS', 'JavaScript'],
                     description: [
                         'Nothing special, its just this website you\'re looking at right now where I display the projects I\'m looking to share with everyone. The source code for this website is available on GitHub.'
@@ -51,7 +51,7 @@ const portfolioData = {
                 {
                     title: 'mythicalcuddl.es',
                     url: 'https://mythicalcuddl.es',
-                    colorClass: 'bg-web-purple',
+                    colorClass: 'tile-tone-07',
                     languages: ['HTML', 'CSS'],
                     description: [
                         'This domain just redirects to my linktree. I might do something with it in the future.'
@@ -60,7 +60,7 @@ const portfolioData = {
                 {
                     title: 'mythicalcuddles.xyz',
                     url: 'https://mythicalcuddles.xyz',
-                    colorClass: 'bg-web-gray',
+                    colorClass: 'tile-tone-08',
                     languages: ['HTML', 'CSS'],
                     description: [
                         'This domain just redirects to my Discord Server (invite link). I might do something with it in the future.'
@@ -73,7 +73,7 @@ const portfolioData = {
             projects: [
                 {
                     title: 'What is this???',
-                    colorClass: 'bg',
+                    colorClass: 'tile-tone-09',
                     fullRow: true,
                     description: [
                         'I\'m working on a few games in the background... Though they won\'t be open sourced, I\'d still like to share them with you when the time comes.',
@@ -88,7 +88,7 @@ const portfolioData = {
                 {
                     title: 'What is VRChat?',
                     url: null,
-                    colorClass: 'bg-vrchat-green',
+                    colorClass: 'tile-tone-10',
                     fullRow: true,
                     description: [
                         'This whole section will be covering the creations I\'ve made in Unity3D to work along with the VRChat world. VRChat is a free game which you can download from Steam or the Oculus store, which allows the players to be in complete control of the content creation on the game. The game can be played on desktop or in Virtual Reality. I\'ve launched a couple of worlds, working on a few more and helped out in a few. You can view them here.'
@@ -101,7 +101,7 @@ const portfolioData = {
                 {
                     title: 'The Lustful Wenches',
                     url: 'https://vrchat.com/home/launch?worldId=wrld_65aed793-367d-4251-8f33-aecd46243c0d',
-                    colorClass: 'bg-vrchat-orange',
+                    colorClass: 'tile-tone-11',
                     languages: ['Unity3D', 'Udon(Sharp)'],
                     date: '2022/02/18',
                     fullRow: true,
@@ -119,7 +119,7 @@ const portfolioData = {
                 {
                     title: 'Murder 4 Paintings',
                     url: null,
-                    colorClass: 'bg-vrchat-blue',
+                    colorClass: 'tile-tone-12',
                     languages: ['Unity3D'],
                     date: '2021/11/19',
                     fullRow: true,
@@ -139,7 +139,7 @@ const portfolioData = {
                 {
                     title: "Cuddles' Memories",
                     url: 'https://vrchat.com/home/launch?worldId=wrld_e2fa9d6b-4ee8-4bc8-bfd2-25892d4dd0a3',
-                    colorClass: 'bg-vrchat-lilac',
+                    colorClass: 'tile-tone-13',
                     languages: ['Unity3D', 'Udon/UdonSharp'],
                     date: '2020/10/18',
                     content: [
@@ -160,7 +160,7 @@ const portfolioData = {
                 {
                     title: 'Archived & Abandonware',
                     url: null,
-                    colorClass: 'bg-vrchat-green',
+                    colorClass: 'tile-tone-14',
                     fullRow: true,
                     description: [
                         'Projects below this section have been Archived and Abandoned. They may not be working anymore or work as expected! Use with your own caution.'
@@ -173,7 +173,7 @@ const portfolioData = {
             projects: [
                 {
                     title: 'Notice',
-                    colorClass: 'bg-vrchat-green',
+                    colorClass: 'tile-tone-15',
                     fullRow: true,
                     description: [
                         'Projects below have been Archived as they are past projects that I no longer work on. They may not be working anymore or work as expected! Use with your own caution.'
@@ -182,7 +182,7 @@ const portfolioData = {
                 {
                     title: 'DiscordBot',
                     url: 'https://github.com/MythicalCuddles/DiscordBot',
-                    colorClass: 'bg-personal-blue',
+                    colorClass: 'tile-tone-16',
                     languages: ['C#', 'MySQL'],
                     headerNote: '🌟 Contributed to the <a target="_BLANK" href="https://archiveprogram.github.com">2020 GitHub Arctic Code Vault</a>!',
                     description: [
@@ -197,7 +197,7 @@ const portfolioData = {
                 {
                     title: 'DiscordBot Web',
                     url: 'https://github.com/MythicalCuddles/DiscordBot-Web',
-                    colorClass: 'bg-personal-maroon',
+                    colorClass: 'tile-tone-17',
                     languages: ['PHP', 'MySQL'],
                     date: '2022-08-14',
                     description: [
@@ -207,7 +207,7 @@ const portfolioData = {
                 {
                     title: 'MogiiBot3',
                     url: 'https://github.com/MythicalCuddles/MogiiBot3',
-                    colorClass: 'bg-personal-brown',
+                    colorClass: 'tile-tone-18',
                     languages: ['C#'],
                     date: '2018-06-00',
                     description: [
@@ -218,7 +218,7 @@ const portfolioData = {
                 {
                     title: 'MelissaNET',
                     url: null,
-                    colorClass: 'bg-uni-purple',
+                    colorClass: 'tile-tone-19',
                     languages: ['C# Library'],
                     description: [
                         'MelissaNET is a C# library, which was created mainly to provide update functionality via online version checking for DiscordBot. It has been developed to provide additional features that can be used over multiple projects.',
@@ -228,7 +228,7 @@ const portfolioData = {
                 {
                     title: 'Gender Essence',
                     url: 'https://genderessence.org.uk',
-                    colorClass: 'bg-personal-plum',
+                    colorClass: 'tile-tone-20',
                     languages: ['CMS', 'HTML', 'CSS'],
                     description: [
                         "Gender Essence was one of my first websites I helped get online using a Content Management System (CMS). The use of the CMS allowed for the client to go on at a later time and alter the content of the websites to her liking, allowing for the website to show up to date information which best suited her company.",
@@ -246,7 +246,7 @@ const portfolioData = {
                 {
                     title: '(UK) Happy Hardcore',
                     url: 'https://github.com/MythicalCuddles/Book-Loaning-System',
-                    colorClass: 'bg-uni-red',
+                    colorClass: 'tile-tone-21',
                     links: [
                         { type: 'link', text: 'Berserk IV - 27th July 2024', url: 'https://youtu.be/qKHb6YY0cPg' },
                         { type: 'link', text: 'Popup - 10th May 2024', url: 'https://youtu.be/VH_DLvnsgXM' }
@@ -255,7 +255,7 @@ const portfolioData = {
                 {
                     title: 'Trance',
                     url: 'https://github.com/MythicalCuddles/Book-Loaning-System',
-                    colorClass: 'bg-uni-red',
+                    colorClass: 'tile-tone-22',
                     links: [
                         { type: 'link', text: 'Popup - 27th September 2024', url: 'https://youtu.be/8ZQRPaIT82U' }
                     ]
@@ -267,7 +267,7 @@ const portfolioData = {
             projects: [
                 {
                     title: 'Notice',
-                    colorClass: 'bg-vrchat-green',
+                    colorClass: 'tile-tone-23',
                     fullRow: true,
                     description: [
                         'Projects below have been Archived as they were made as part of my University Course. They may not be working anymore or work as expected! Use with your own caution.'
@@ -276,7 +276,7 @@ const portfolioData = {
                 {
                     title: 'Book Loaning System',
                     url: 'https://github.com/MythicalCuddles/Book-Loaning-System',
-                    colorClass: 'bg-uni-red',
+                    colorClass: 'tile-tone-24',
                     languages: ['100% 🏆', 'Java'],
                     date: '2017/12/18',
                     description: [
@@ -290,7 +290,7 @@ const portfolioData = {
                 {
                     title: 'Dynamic Web Authoring',
                     url: 'https://github.com/MythicalCuddles/UU-DynamicWebAuthoring',
-                    colorClass: 'bg-uni-yellow',
+                    colorClass: 'tile-tone-25',
                     languages: ['HTML', 'CSS', 'JavaScript'],
                     date: '2018/08/17',
                     description: [
@@ -301,7 +301,7 @@ const portfolioData = {
                 {
                     title: 'Quiz Game',
                     url: null,
-                    colorClass: 'bg-uni-orange',
+                    colorClass: 'tile-tone-26',
                     languages: ['C++'],
                     date: '2019/12/12',
                     description: [
@@ -312,7 +312,7 @@ const portfolioData = {
                 {
                     title: 'Booking System',
                     url: 'https://github.com/MythicalCuddles/UU-HCI',
-                    colorClass: 'bg-uni-yellow',
+                    colorClass: 'tile-tone-27',
                     languages: ['HTML', 'CSS'],
                     date: '2018/08/17',
                     description: [
@@ -322,7 +322,7 @@ const portfolioData = {
                 {
                     title: 'Software Development',
                     url: 'https://github.com/MythicalCuddles/UU-SoftwareDevelopment',
-                    colorClass: 'bg-uni-green',
+                    colorClass: 'tile-tone-28',
                     languages: ['Java'],
                     description: [
                         'COM186 & COM187 Software Development - An asortment of practical work I\'ve done from these two modules.'
@@ -331,7 +331,7 @@ const portfolioData = {
                 {
                     title: 'Introduction to Java',
                     url: 'https://github.com/MythicalCuddles/Introduction-to-Java-Programming-10th-Edition',
-                    colorClass: 'bg-uni-blue',
+                    colorClass: 'tile-tone-29',
                     languages: ['Java'],
                     description: [
                         'Introduction to Java Programming 10th Edition - All the practicals I\'ve done from the Introduction to Java Programming 10th Edition book. These were only done during the COM186 & COM187 module dates, and may be updated in the future with more practical work.'
@@ -340,7 +340,7 @@ const portfolioData = {
                 {
                     title: 'Computer Hardware',
                     url: 'https://github.com/MythicalCuddles/UU-ComputerHardware',
-                    colorClass: 'bg-uni-purple',
+                    colorClass: 'tile-tone-30',
                     languages: ['Assembly'],
                     description: [
                         'COM181 Computer Hardware Coursework - This is the coursework I did for Computer Hardware, which contains an Binary Adder Circuit as Assignment 1 and a Decimal to Roman Numerals Converter as Assignment 2.'
