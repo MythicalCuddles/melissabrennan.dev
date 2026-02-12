@@ -64,7 +64,7 @@ function renderPortfolio() {
 function buildTile(project) {
     const tile = cloneTemplate('tile-template');
     const button = tile.querySelector('.tileButton');
-    const title = tile.querySelector('h2');
+    const title = tile.querySelector('h3');
     const languagesLine = tile.querySelector('.tileLanguages');
     const time = tile.querySelector('time');
     const headerNote = tile.querySelector('.tileHeaderNote');
