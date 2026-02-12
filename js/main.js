@@ -50,6 +50,11 @@ function renderPortfolio() {
         const categoryNode = cloneTemplate('category-template');
         const heading = categoryNode.querySelector('.sectionHeading');
         const tileContainer = categoryNode.querySelector('.tileContainer');
+
+        if (!heading || !tileContainer) {
+            return;
+        }
+
         heading.textContent = category.title;
 
         category.projects.forEach((project) => {
@@ -64,12 +69,22 @@ function renderPortfolio() {
 function buildTile(project) {
     const tile = cloneTemplate('tile-template');
     const button = tile.querySelector('.tileButton');
-    const title = tile.querySelector('h3');
+    let title = tile.querySelector('.tileTitle') || tile.querySelector('h3');
     const languagesLine = tile.querySelector('.tileLanguages');
     const time = tile.querySelector('time');
     const headerNote = tile.querySelector('.tileHeaderNote');
     const contentContainer = tile.querySelector('.tileContent');
     const linkList = tile.querySelector('.tileLinks');
+
+    if (!button || !languagesLine || !time || !headerNote || !contentContainer || !linkList) {
+        return tile;
+    }
+
+    if (!title) {
+        title = document.createElement('h3');
+        title.classList.add('tileTitle');
+        button.prepend(title);
+    }
 
     if (project.fullRow) {
         tile.classList.add('fullRow');
