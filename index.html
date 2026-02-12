@@ -4,11 +4,11 @@
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="theme-color" content="#303030">
+        <meta name="theme-color" content="#121018">
 
         <title>Melissa Brennan // Portfolio</title>
 
-        <link rel="stylesheet" href="css/style.css?version=3">
+        <link rel="stylesheet" href="css/style.css?version=4">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
         <script src="js/projects-data.js" defer></script>
         <script src="js/main.js" defer></script>
@@ -17,43 +17,43 @@
     </head>
     <body>
         <div id="container">
-            <div id="topContent">
+            <header id="topContent">
+                <p class="eyebrow">Portfolio</p>
                 <h1 id="pageTitle">Melissa Brennan</h1>
-            </div>
-            <hr />
+                <p class="introText"></p>
+            </header>
 
-            <div class="mainContent">
-                <h1 class="sectionHeading">Socials & Links</h1>
-                <div id="socialPills" data-social-container></div>
+            <main class="mainContent">
+                <section class="socialSection">
+                    <h2 class="sectionHeading">Socials & Links</h2>
+                    <div id="socialPills" data-social-container></div>
+                </section>
 
                 <div class="jsWarning" data-js-warning>
                     <h2>JavaScript required</h2>
                     <p>
-                        This portfolio needs JavaScript to load projects and categories. Please enable JavaScript in your
-                        browser and reload the page.
+                        This portfolio needs JavaScript to load projects and categories. Please enable JavaScript in your browser and reload the page.
                     </p>
                 </div>
 
                 <div data-portfolio></div>
-            </div>
+            </main>
 
-            <div id="footer">
-                <br />
+            <footer id="footer">
                 <span id="footCenter">
-                    Background pattern from <a target="_BLANK" href="https://www.toptal.com/designers/subtlepatterns/">Toptal Subtle Patterns</a>
-                    <br>
+                    <!--Background pattern from <a target="_BLANK" href="https://www.toptal.com/designers/subtlepatterns/">Toptal Subtle Patterns</a>
+                    <br>--> <!-- background not used in flat style changes. -->
                     <a target="_BLANK" href="https://melissabrennan.dev">melissabrennan.dev</a> •
-                    <!--<a target="_BLANK" href="https://mythicalcuddles.xyz">mythicalcuddles.xyz</a> • -->
                     <a target="_BLANK" href="https://mythicalcuddl.es">mythicalcuddl.es</a>
                     <br>
                     <a target="_BLANK" href="https://github.com/MythicalCuddles/melissabrennan.dev">Source Code</a>
                 </span>
-            </div>
+            </footer>
         </div>
 
         <template id="category-template">
             <div class="category">
-                <h1 class="sectionHeading"></h1>
+                <h2 class="sectionHeading"></h2>
                 <section class="tileContainer"></section>
             </div>
         </template>
@@ -62,7 +62,7 @@
             <section class="tile">
                 <header>
                     <a class="tileButton">
-                        <h2></h2>
+                        <h3></h3>
                         <p class="tileLanguages"></p>
                         <time></time>
                     </a>

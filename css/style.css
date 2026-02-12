@@ -1,133 +1,148 @@
-@import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    --bg-base: #121018;
+    --bg-panel: #1a1724;
+    --bg-card: #211d2e;
+    --border: #322c45;
+    --text-primary: #f7f3ff;
+    --text-muted: #b6a9cb;
+    --accent: #a33cad;
+    --accent-soft: rgba(163, 60, 173, 0.2);
+}
+
+* {
+    box-sizing: border-box;
+}
 
 body {
-    /* Background pattern from Toptal Subtle Patterns */
-    background-image: url("../images/dark_mosaic.png");
-    background-color: #0d1521;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    margin: 0;
+    background: var(--bg-base);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
 }
 
 #container {
-    width: 100%;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 12px;
-    color: whitesmoke;
-    text-align: left;
-    overflow: hidden;
-    background-color: rgba(141, 141, 141, 0.1);
-    border-radius: 20px;
+    width: min(1200px, calc(100% - 2rem));
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    background: var(--bg-panel);
+    border: 1px solid var(--border);
+    border-radius: 16px;
 }
 
 #topContent {
-    font-family: 'Chilanka', cursive;
-    font-size: 40px;
-    margin: auto;
     text-align: center;
-    padding-bottom: 0%;
-    padding-top: 10px;
-    letter-spacing: 5px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1.25rem 1rem 1.5rem;
+}
+
+.eyebrow {
+    margin: 0;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.78rem;
+    font-weight: 600;
 }
 
 #pageTitle {
-    margin: 0px;
+    margin: 0.3rem 0;
+    font-size: clamp(2rem, 4vw, 2.9rem);
+    line-height: 1.1;
 }
 
-a {
-    text-decoration: none;
-    color: palevioletred;
-}
-
-a:hover {
-    text-decoration: none;
-    color: crimson;
-}
-
-#footLeft {
-    float: left;
-}
-#footCenter {
-    text-align: center;
-    display: block;
-    background-color: rgba(141, 141, 141, 0.05);
-    border-radius: 10px;
-    padding: 6px;
-    margin: 4px;
-    font-size: 14px;
-}
-#footRight {
-    float: right;
-    text-align: right;
+.introText {
+    margin: 0.4rem auto 0;
+    max-width: 720px;
+    color: var(--text-muted);
 }
 
 .mainContent {
-    margin: 1em;
+    margin-top: 1.2rem;
+}
+
+.socialSection {
+    margin-bottom: 1.4rem;
+}
+
+.sectionHeading {
+    margin: 0 0 0.85rem;
+    color: var(--accent);
+    font-size: clamp(1.1rem, 2.5vw, 1.65rem);
+    letter-spacing: 0.02em;
+    font-weight: 600;
+}
+
+#socialPills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+}
+
+.pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+    padding: 0.45rem 0.8rem;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--tile-bg, #211d2e) 18%, var(--bg-card));
+    color: var(--tile-text, var(--text-primary));
+    font-size: 0.95rem;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.pill:hover {
+    border-color: var(--accent);
+    transform: translateY(-1px);
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #cb79d4;
 }
 
 .jsWarning {
-    margin: 1em 0;
-    padding: 1em 1.25em;
+    margin: 1rem 0;
+    padding: 1rem;
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    color: #fff;
-    text-align: center;
-    line-height: 1.5;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    border: 1px solid #5a3a29;
+    background: #2e2019;
 }
 
 .jsWarning h2 {
-    margin: 0 0 0.25em;
-    font-size: 1.2em;
+    margin: 0 0 0.2rem;
+    font-size: 1rem;
 }
 
 .jsWarning.is-hidden {
     display: none;
 }
 
-h1.sectionHeading {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: 'Patrick Hand', cursive;
-    letter-spacing: 2px;
-    font-size: 35px;
-}
-
-h1.sectionHeading::before,
-h1.sectionHeading::after {
-    content: '';
-    border-top: 5px double rgb(120, 120, 120);
-    margin: 0 20px 0 20%;
-    flex: 1 0 20px;
-
-}
-
-h1.sectionHeading::after {
-    margin: 0 20% 0 20px;
+.category {
+    margin-bottom: 1.2rem;
 }
 
 .mainContent .tileContainer {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-    margin: 0px 0px 60px 0px;
-    row-gap: 1em;
-    column-gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 0.8rem;
 }
 
 .mainContent .tile {
-    box-sizing: border-box;
-    position: relative;
-    font-weight: 400;
-    text-align: center;
-    background-color: rgba(141, 141, 141, 0.1);
-    border-radius: 10px;
-    padding: 4px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 0.75rem;
 }
 
 .mainContent .tile.fullRow {
@@ -135,149 +150,77 @@ h1.sectionHeading::after {
 }
 
 .mainContent .tile p {
-    margin: 10px 10px 10px 10px;
+    margin: 0.6rem 0;
 }
 
 .mainContent .tile img {
-    max-width: 80%;
-    position: relative;
-    border-radius: 10px;
-    text-decoration: none;
-}
-
-.mainContent .tile header {
-    -webkit-text-stroke: .05px #000;
-}
-
-header {
-    display: block;
-}
-
-.mainContent .tile header {
-    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+    border: 1px solid var(--border);
 }
 
 .mainContent .tileButton {
-    position: relative;
     display: block;
-    padding: .5em .75em;
-    border: 1px solid #000;
-    border-radius: 4px;
-    background: var(--tile-bg, #666);
-    color: var(--tile-text, #fff);
-    box-shadow:
-        inset 0 0 0 40em rgba(0, 0, 0, 0.1),
-        inset 0 -4em 8em -3.6em rgba(0, 0, 0, 0.5),
-        inset 0 0 3px 1px rgba(255, 255, 255, 0.5);
-    text-decoration: none;
-    line-height: 110%;
-    transition: box-shadow linear .2s;
+    background: color-mix(in srgb, var(--tile-bg, #211d2e) 22%, #1a1724);
+    border: 1px solid color-mix(in srgb, var(--tile-bg, #322c45) 35%, var(--accent));
+    border-radius: 10px;
+    padding: 0.65rem 0.75rem;
+    color: var(--tile-text, var(--text-primary));
+    position: relative;
 }
 
-.mainContent .tile header h2 {
+.mainContent .tile header h3 {
     margin: 0;
-    color: #fff;
-    text-shadow:
-        0.5px 0.5px 0.5px #000,
-        -0.5px 0.5px 0.5px #000,
-        0.5px -0.5px 0.5px #000,
-        -0.5px -0.5px 0.5px #000;
+    font-size: 1.12rem;
+    font-weight: 600;
 }
 
 .mainContent .tile .tileLanguages {
-    margin: .15em 0 0;
-    font-size: .9em;
-    color: rgba(255, 255, 255, 0.85);
-    letter-spacing: 0.01em;
-}
-
-.mainContent .tile h2 {
-    display: block;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
+    margin: 0.15rem 0 0;
+    color: var(--text-muted);
+    font-size: 0.9rem;
 }
 
 .mainContent header time {
-    display: block;
     position: absolute;
-    top: .25em;
-    right: .5em;
-    font-size: .66em;
-    line-height: 1;
-    color: rgba(255, 255, 255, 0.5);
+    top: 0.6rem;
+    right: 0.65rem;
+    color: #d5a1de;
+    font-size: 0.73rem;
 }
 
-
-.mainContent .tileImage {
-    display: block;
-    width: 100%;
-    margin-bottom: 1em;
-    box-shadow: 0 0 0.125em #000;
-    padding: 1px;
-    border-radius: 5px;
+.tileHeaderNote {
+    color: var(--text-muted);
 }
 
 ul.tileLinks {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 6px;
-    margin: 1em 0;
-    padding: .5em 0 .25em;
+    gap: 0.5rem;
+    margin: 0.8rem 0 0;
+    padding: 0.8rem 0 0;
     list-style: none;
-    padding-inline-start: 0;
-    border-top: 1px dotted rgba(255, 255, 255, 0.25);
-    border-bottom: 1px dotted rgba(255, 255, 255, 0.25);
-}
-
-ul {
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0em;
-    margin-inline-end: 0em;
-    padding-inline-start: 40px;
-}
-
-li {
-    text-align: -webkit-match-parent;
-    line-height: 1.5;
+    border-top: 1px solid var(--border);
 }
 
 ul.tileLinks li {
     margin: 0;
-    display: inline-flex;
-    list-style-type: none;
 }
 
 .tileLinkButton {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
-    padding: 6px 10px;
-    border-radius: 7px;
-    border: 1px solid rgba(255, 255, 255, 0.16);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.25)), var(--tile-bg, #666);
-    box-shadow:
-        inset 0 0 0 40em rgba(0, 0, 0, 0.06),
-        0 3px 12px rgba(0, 0, 0, 0.25);
-    color: var(--tile-text, #fff);
-    font-weight: 500;
-    font-size: 0.95em;
-    letter-spacing: 0.01em;
-    text-decoration: none;
-    transition: transform 0.1s ease-out, box-shadow 0.2s ease-out, border-color 0.2s ease-out;
+    gap: 0.4rem;
+    padding: 0.38rem 0.65rem;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: color-mix(in srgb, var(--tile-bg, #191624) 20%, #171420);
+    color: var(--tile-text, var(--text-primary));
+    font-size: 0.88rem;
 }
 
 .tileLinkButton:hover {
-    transform: translateY(-2px);
-    box-shadow:
-        inset 0 0 0 40em rgba(0, 0, 0, 0.08),
-        0 6px 18px rgba(0, 0, 0, 0.36);
-    border-color: rgba(255, 255, 255, 0.28);
+    border-color: var(--accent);
 }
 
 .tileLinkButton.is-static {
@@ -289,63 +232,21 @@ ul.tileLinks li {
     transform: none;
 }
 
-.tileLinkIcon {
-    opacity: 0.9;
-}
-
 .tileLinkNote {
-    opacity: 0.8;
-    font-size: 0.85em;
+    color: var(--text-muted);
+    font-size: 0.8rem;
 }
 
-#socialPills {
+#footCenter {
     text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
+    display: block;
+    margin-top: 0.6rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 0.88rem;
 }
 
-.pill {
-    border: none;
-    color: var(--tile-text, white);
-    padding: 8px 18px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    margin: 5px 3px;
-    cursor: pointer;
-    border-radius: 5px;
-    width: auto;
-    background-color: var(--tile-bg, #666);
-    box-shadow:
-        inset 0 2em 1em -1em rgba(255, 255, 255, 0.125),
-        inset 0 -2em 1em 1em rgba(0, 0, 0, 0.25),
-        inset 0 0 0.25em rgba(255, 255, 255, 0.5);
-    transition: box-shadow .1s linear, padding-top .1s linear;
-}
-
-@media (max-width: 720px) {
-    #container {
-        padding: 8px;
-    }
-
-    h1.sectionHeading {
-        font-size: 28px;
-    }
-
-    h1.sectionHeading::before,
-    h1.sectionHeading::after {
-        margin: 0 10px;
-    }
-
-    .mainContent {
-        margin: 0.5em;
-    }
-}
 /* Color utility classes */
 .bg-trans-pink { --tile-bg: #F7A8B8; --tile-text: #000; }
 .bg-muted-gray { --tile-bg: #dbdbdb; --tile-text: #000; }
@@ -369,6 +270,14 @@ ul.tileLinks li {
 .bg-personal-plum { --tile-bg: #570743; }
 .bg-personal-darkred { --tile-bg: #88290c; }
 
-.tileHeaderNote {
-    margin: 6px 0 0;
+@media (max-width: 700px) {
+    #container {
+        width: calc(100% - 1rem);
+        margin: 0.5rem auto;
+        padding: 0.8rem;
+    }
+
+    .mainContent .tileContainer {
+        grid-template-columns: 1fr;
+    }
 }
