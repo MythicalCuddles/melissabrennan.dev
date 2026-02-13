@@ -188,6 +188,28 @@ const portfolioData = {
                 }
             ]
         },
+        {
+            title: 'DJ Sets',
+            projects: [
+                {
+                    title: '(UK) Happy Hardcore',
+                    url: null,
+                    colorClass: 'tile-tone-21',
+                    links: [
+                        { type: 'link', text: 'Berserk IV - 27th July 2024', url: 'https://youtu.be/qKHb6YY0cPg' },
+                        { type: 'link', text: 'Popup - 10th May 2024', url: 'https://youtu.be/VH_DLvnsgXM' }
+                    ]
+                },
+                {
+                    title: 'Trance',
+                    url: null,
+                    colorClass: 'tile-tone-22',
+                    links: [
+                        { type: 'link', text: 'Popup - 27th September 2024', url: 'https://youtu.be/8ZQRPaIT82U' }
+                    ]
+                }
+            ]
+        },
         /*{
             title: 'Archived & Abandonware',
             projects: [
@@ -270,28 +292,6 @@ const portfolioData = {
                     ],
                     links: [
                         { type: 'link', text: 'Wayback Machine', url: 'https://web.archive.org/web/20201130101037/http://genderessence.org.uk/' }
-                    ]
-                }
-            ]
-        },
-        {
-            title: 'DJ Sets',
-            projects: [
-                {
-                    title: '(UK) Happy Hardcore',
-                    url: null,
-                    colorClass: 'tile-tone-21',
-                    links: [
-                        { type: 'link', text: 'Berserk IV - 27th July 2024', url: 'https://youtu.be/qKHb6YY0cPg' },
-                        { type: 'link', text: 'Popup - 10th May 2024', url: 'https://youtu.be/VH_DLvnsgXM' }
-                    ]
-                },
-                {
-                    title: 'Trance',
-                    url: null,
-                    colorClass: 'tile-tone-22',
-                    links: [
-                        { type: 'link', text: 'Popup - 27th September 2024', url: 'https://youtu.be/8ZQRPaIT82U' }
                     ]
                 }
             ]
