@@ -122,7 +122,6 @@ const portfolioData = {
                     colorClass: 'tile-tone-11',
                     languages: ['Unity3D', 'Udon(Sharp)'],
                     date: '2022/02/18',
-                    fullRow: false,
                     content: [
                         { type: 'image', src: 'images/vrchat_lustfulwenches.png', alt: '' }
                     ],
@@ -140,7 +139,6 @@ const portfolioData = {
                     colorClass: 'tile-tone-04',
                     languages: ['Unity3D', 'Udon(Sharp)', 'Blender'],
                     date: '2023/11/11',
-                    fullRow: false,
                     content: [
                         { type: 'image', src: 'images/vrchat_asot.png', alt: '' }
                     ],
@@ -158,7 +156,6 @@ const portfolioData = {
                     colorClass: 'tile-tone-12',
                     languages: ['Unity3D'],
                     date: '2021/11/19',
-                    fullRow: true,
                     content: [
                         { type: 'image', src: 'images/vrchat_m4paintings.png', alt: '' },
                         { type: 'image', src: 'images/unity_m4paintings.png', alt: '' }
