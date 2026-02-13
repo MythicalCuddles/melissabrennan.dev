@@ -279,7 +279,7 @@ const portfolioData = {
             projects: [
                 {
                     title: '(UK) Happy Hardcore',
-                    url: '#',
+                    url: null,
                     colorClass: 'tile-tone-21',
                     links: [
                         { type: 'link', text: 'Berserk IV - 27th July 2024', url: 'https://youtu.be/qKHb6YY0cPg' },
@@ -288,7 +288,7 @@ const portfolioData = {
                 },
                 {
                     title: 'Trance',
-                    url: '#',
+                    url: null,
                     colorClass: 'tile-tone-22',
                     links: [
                         { type: 'link', text: 'Popup - 27th September 2024', url: 'https://youtu.be/8ZQRPaIT82U' }
