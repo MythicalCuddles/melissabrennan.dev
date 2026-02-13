@@ -8,28 +8,46 @@ const portfolioData = {
             colorClass: 'tile-tone-01'
         },
         {
+            label: 'Instagram',
+            url: 'https://instagram.com/mythicalcuddles',
+            icon: 'fab fa-instagram',
+            colorClass: 'tile-tone-01'
+        },
+        {
+            label: 'Bluesky',
+            url: 'https://bsky.app/profile/mythicalcuddl.es',
+            icon: 'fab fa-bluesky',
+            colorClass: 'tile-tone-02'
+        },
+        {
             label: 'SoundCloud',
             url: 'https://soundcloud.com/mythicalcuddles',
             icon: 'fab fa-soundcloud',
             colorClass: 'tile-tone-02'
         },
         {
-            label: 'Instagram',
-            url: 'https://instagram.com/mythicalcuddles',
-            icon: 'fab fa-instagram',
-            colorClass: 'tile-tone-03'
-        },
-        {
             label: 'YouTube',
             url: 'https://www.youtube.com/@mythicalcuddles',
             icon: 'fab fa-youtube',
+            colorClass: 'tile-tone-03'
+        },
+        {
+            label: 'Twitch',
+            url: 'https://www.twitch.tv/mythicalcuddles',
+            icon: 'fab fa-twitch',
+            colorClass: 'tile-tone-03'
+        },
+        {
+            label: 'Documentations',
+            url: 'https://docs.mythicalcuddl.es',
+            icon: 'fa fa-server',
             colorClass: 'tile-tone-04'
         },
         {
-            label: 'LinkTree',
-            url: 'https://linktr.ee/mythicalcuddles',
+            label: 'Blog',
+            url: 'https://docs.mythicalcuddl.es/blog',
             icon: 'fa fa-server',
-            colorClass: 'tile-tone-05'
+            colorClass: 'tile-tone-04'
         }
     ],
     categories: [
@@ -104,7 +122,7 @@ const portfolioData = {
                     colorClass: 'tile-tone-11',
                     languages: ['Unity3D', 'Udon(Sharp)'],
                     date: '2022/02/18',
-                    fullRow: true,
+                    fullRow: false,
                     content: [
                         { type: 'image', src: 'images/vrchat_lustfulwenches.png', alt: '' }
                     ],
@@ -115,7 +133,25 @@ const portfolioData = {
                     links: [
                         { type: 'link', text: 'View World', url:'https://vrchat.com/home/launch?worldId=wrld_65aed793-367d-4251-8f33-aecd46243c0d' }
                     ]
-                }/*,
+                },
+                {
+                    title: 'A State of Trance Studio',
+                    url: 'https://vrchat.com/home/world/wrld_fb9d5d2f-caaf-4fc0-a071-f058f2759e95',
+                    colorClass: 'tile-tone-04',
+                    languages: ['Unity3D', 'Udon(Sharp)', 'Blender'],
+                    date: '2023/11/11',
+                    fullRow: false,
+                    content: [
+                        { type: 'image', src: 'images/vrchat_asot.png', alt: '' }
+                    ],
+                    description: [
+                        'Radio office based of A State of Trance',
+                        'This world is definitely still a work in progress, but includes some features to allow for livestreaming to take place. The storage room door isn\'t added however the wall is walkthrough which will allow access to stream camera bubbles along with a pickup camera which also has a stream camera bubble',
+                    ],
+                    links: [
+                        { type: 'link', text: 'View World', url:'https://vrchat.com/home/world/wrld_fb9d5d2f-caaf-4fc0-a071-f058f2759e95' }
+                    ]
+                },
                 {
                     title: 'Murder 4 Paintings',
                     url: null,
@@ -146,12 +182,13 @@ const portfolioData = {
                         { type: 'image', src: 'images/vrchat_cuddlesmemories.png', alt: '' }
                     ],
                     description: [
-                        "Cuddles' Memories was the first world I publically released in VRChat with showcases how Unity's Pro-Builder can be used to build a world. I also created different scripts to toggle systems such as the world's mirror, providing different options and toggle other portals."
+                        'Cuddles\' Memories was the first world I publically released in VRChat with showcases how Unity\'s Pro-Builder can be used to build a world. I also created different scripts to toggle systems such as the world\'s mirror, providing different options and toggle other portals.',
+                        'The world is a small gallery with different rooms. The world is still up and running in VRChat, but I no longer maintain it as I\'ve moved on to other projects and worlds. However, you can still visit the world and check it out if you like!'
                     ],
                     links: [
                         { type: 'text', text: 'View World' }
                     ]
-                }*/
+                }
             ]
         },
         /*{
