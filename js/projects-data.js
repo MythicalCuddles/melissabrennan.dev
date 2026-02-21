@@ -90,12 +90,21 @@ const portfolioData = {
             title: 'Games',
             projects: [
                 {
-                    title: 'What is this???',
-                    colorClass: 'tile-tone-09',
-                    fullRow: true,
+                    title: 'Where The Trail Ends',
+                    url: 'https://mythicalcuddles.itch.io/where-the-trail-ends',
+                    colorClass: 'tile-tone-06',
+                    headerNote: '🌟 Completed as part of <a target="_BLANK" href="https://itch.io/jam/brackeys-15">Brackeys Game Jam 2026.1</a>!',
+                    languages: ['Godot', 'GDScript', 'Aseprite', 'GAME-JAM'],
+                    date: '2026/02/21',
+                    content: [
+                        { type: 'image', src: 'images/where_the_trail_ends.png', alt: '' }
+                    ],
                     description: [
-                        'I\'m working on a few games in the background... Though they won\'t be open sourced, I\'d still like to share them with you when the time comes.',
-                        'Stay tuned!'
+                        'Your friend vanished after claiming they found something beyond the end of a forest trail. Now you’re standing at the same sign - “TRAIL ENDS HERE” - except the path doesn’t stop. By slipping between two overlapping realities, you uncover a version of the forest that shouldn’t exist… and something that has been waiting there longer than you realise.',
+                        'Where The Trail Ends is a 2D puzzle platformer game developed in Godot and created for the Brackeys Game Jam 2026.1. The game was developed by myself, where I worked on the level design, programming and some of the art assets.'
+                    ],
+                    links: [
+                        { type: 'link', text: 'View on Itch.IO', url:'https://mythicalcuddles.itch.io/where-the-trail-ends' }
                     ]
                 }
             ]
