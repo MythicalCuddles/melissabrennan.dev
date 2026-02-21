@@ -93,6 +93,7 @@ const portfolioData = {
                     title: 'Where The Trail Ends',
                     url: 'https://mythicalcuddles.itch.io/where-the-trail-ends',
                     colorClass: 'tile-tone-06',
+                    fullRow: false,
                     headerNote: '🌟 Completed as part of <a target="_BLANK" href="https://itch.io/jam/brackeys-15">Brackeys Game Jam 2026.1</a>!',
                     languages: ['Godot', 'GDScript', 'Aseprite', 'GAME-JAM'],
                     date: '2026/02/21',
