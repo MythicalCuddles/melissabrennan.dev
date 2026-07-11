@@ -2,17 +2,17 @@
 
 :root {
     --bg-base: #0d0b14;
-    --bg-panel: rgba(25, 21, 36, 0.78);
-    --bg-card: rgba(34, 29, 49, 0.86);
-    --bg-card-strong: rgba(43, 35, 65, 0.94);
-    --border: rgba(255, 255, 255, 0.11);
+    --bg-panel: #171322;
+    --bg-card: #211b30;
+    --bg-card-strong: #29213d;
+    --border: #3b314f;
     --text-primary: #fff8ff;
     --text-muted: #c8bdd8;
     --accent: #ff74cf;
     --accent-2: #8f7cff;
     --accent-3: #64d8ff;
     --accent-soft: rgba(255, 116, 207, 0.16);
-    --shadow: 0 24px 80px rgba(0, 0, 0, 0.38);
+    --shadow: 0 16px 36px rgba(0, 0, 0, 0.26);
 }
 
 * {
@@ -27,26 +27,12 @@ body {
     margin: 0;
     min-height: 100vh;
     background:
-        radial-gradient(circle at 12% 8%, rgba(255, 116, 207, 0.24), transparent 32rem),
-        radial-gradient(circle at 88% 12%, rgba(100, 216, 255, 0.18), transparent 30rem),
-        radial-gradient(circle at 50% 100%, rgba(143, 124, 255, 0.22), transparent 38rem),
-        linear-gradient(135deg, #0d0b14 0%, #151120 48%, #100d19 100%);
+        linear-gradient(140deg, rgba(255, 116, 207, 0.14), transparent 34rem),
+        linear-gradient(220deg, rgba(100, 216, 255, 0.12), transparent 30rem),
+        #0d0b14;
     color: var(--text-primary);
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
-}
-
-body::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    z-index: -1;
-    pointer-events: none;
-    background-image:
-        linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
-    background-size: 56px 56px;
-    mask-image: linear-gradient(to bottom, rgba(0,0,0,0.82), transparent 78%);
 }
 
 #container {
@@ -76,8 +62,7 @@ body::before {
     content: '';
     position: absolute;
     border-radius: 999px;
-    filter: blur(2px);
-    opacity: 0.72;
+    opacity: 0.45;
 }
 
 #topContent::before {
@@ -85,7 +70,7 @@ body::before {
     height: 260px;
     right: -72px;
     top: -72px;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.32), rgba(255, 116, 207, 0.1) 55%, transparent 70%);
+    background: rgba(255, 116, 207, 0.2);
 }
 
 #topContent::after {
@@ -93,7 +78,7 @@ body::before {
     height: 180px;
     left: 58%;
     bottom: -90px;
-    background: radial-gradient(circle, rgba(100, 216, 255, 0.22), transparent 70%);
+    background: rgba(100, 216, 255, 0.16);
 }
 
 .eyebrow {
@@ -108,7 +93,6 @@ body::before {
     border: 1px solid rgba(255,255,255,0.18);
     border-radius: 999px;
     background: rgba(255,255,255,0.08);
-    backdrop-filter: blur(12px);
 }
 
 #pageTitle {
@@ -143,8 +127,7 @@ body::before {
     border: 1px solid var(--border);
     border-radius: 24px;
     background: var(--bg-panel);
-    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.22);
-    backdrop-filter: blur(18px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
 }
 
 .socialSection {
@@ -168,7 +151,6 @@ body::before {
     height: 0.8rem;
     border-radius: 50%;
     background: linear-gradient(135deg, var(--accent), var(--accent-3));
-    box-shadow: 0 0 24px rgba(255, 116, 207, 0.75);
 }
 
 #socialPills {
@@ -187,7 +169,7 @@ body::before {
     border-radius: 999px;
     background: linear-gradient(135deg, color-mix(in srgb, var(--tile-bg, #ff74cf) 30%, rgba(255,255,255,0.12)), rgba(255,255,255,0.055));
     box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-    transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+    transition: border-color 0.16s ease, background 0.16s ease;
 }
 
 .pill {
@@ -199,7 +181,6 @@ body::before {
 .pill:hover,
 .tileLinkButton:hover {
     border-color: rgba(255, 255, 255, 0.38);
-    transform: translateY(-2px);
 }
 
 a {
@@ -247,8 +228,8 @@ a:hover {
     border: 1px solid var(--border);
     border-radius: 22px;
     padding: 0.95rem;
-    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.18);
-    transition: transform 0.22s ease, border-color 0.22s ease, background 0.22s ease;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+    transition: border-color 0.16s ease, background 0.16s ease;
 }
 
 .mainContent .tile::before {
@@ -256,12 +237,11 @@ a:hover {
     position: absolute;
     inset: 0;
     pointer-events: none;
-    background: radial-gradient(circle at top right, color-mix(in srgb, var(--tile-bg, #ff74cf) 26%, transparent), transparent 44%);
-    opacity: 0.7;
+    background: linear-gradient(135deg, color-mix(in srgb, var(--tile-bg, #ff74cf) 14%, transparent), transparent 54%);
+    opacity: 0.85;
 }
 
 .mainContent .tile:hover {
-    transform: translateY(-4px);
     border-color: rgba(255,255,255,0.24);
     background: var(--bg-card-strong);
 }
@@ -288,7 +268,6 @@ a:hover {
     object-fit: cover;
     border-radius: 16px;
     border: 1px solid rgba(255,255,255,0.14);
-    box-shadow: 0 16px 36px rgba(0,0,0,0.24);
 }
 
 .mainContent .tileButton {
@@ -384,10 +363,6 @@ ul.tileLinks li {
 .tileLinkButton.is-static {
     cursor: default;
     border-style: dashed;
-}
-
-.tileLinkButton.is-static:hover {
-    transform: none;
 }
 
 .tileLinkNote {
