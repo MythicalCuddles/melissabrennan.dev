@@ -1,15 +1,109 @@
 // melissabrennan.dev - portfolio renderer
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
     try {
         renderSocialLinks();
         renderPortfolio();
         hideJsWarning();
+        await renderGithubProjects();
     } catch (error) {
         console.error('Failed to render portfolio content.', error);
         showJsWarning();
     }
 });
+
+async function renderGithubProjects() {
+    const contentRoot = document.querySelector('[data-portfolio]');
+    const config = typeof portfolioData !== 'undefined' ? portfolioData.github : null;
+    if (!contentRoot || !config || !config.username) return;
+
+    const categoryNode = cloneTemplate('category-template');
+    const heading = categoryNode.querySelector('.sectionHeading');
+    const tileContainer = categoryNode.querySelector('.tileContainer');
+    heading.textContent = config.categoryTitle;
+
+    const introduction = document.createElement('p');
+    introduction.classList.add('categoryIntroduction');
+    introduction.textContent = config.description;
+    heading.after(introduction);
+
+    const status = document.createElement('p');
+    status.classList.add('githubStatus');
+    status.textContent = 'Loading public projects from GitHub…';
+    tileContainer.appendChild(status);
+    contentRoot.appendChild(categoryNode);
+
+    try {
+        const response = await fetch(`https://api.github.com/users/${encodeURIComponent(config.username)}/repos?per_page=100&sort=pushed`, {
+            headers: { Accept: 'application/vnd.github+json' }
+        });
+        if (!response.ok) throw new Error(`GitHub returned ${response.status}`);
+
+        const repositories = await response.json();
+        const featuredUrls = getFeaturedGithubUrls();
+        const projects = repositories
+            .filter((repository) => !repository.archived && !featuredUrls.has(normalizeUrl(repository.html_url)))
+            .map(githubRepositoryToProject);
+
+        status.remove();
+        if (projects.length === 0) {
+            tileContainer.appendChild(buildGithubFallback(config.username, 'All of my public projects are already featured above.'));
+            return;
+        }
+
+        projects.forEach((project) => tileContainer.appendChild(buildTile(project)));
+    } catch (error) {
+        console.warn('Could not load GitHub projects.', error);
+        status.replaceWith(buildGithubFallback(config.username, 'GitHub projects could not be loaded right now.'));
+    }
+}
+
+function githubRepositoryToProject(repository) {
+    const links = [{ type: 'link', text: 'Source Code', url: repository.html_url, icon: 'fab fa-github' }];
+    if (repository.homepage) {
+        links.push({ type: 'link', text: 'Project Website', url: repository.homepage, icon: 'fas fa-external-link-alt' });
+    }
+
+    return {
+        title: repository.name,
+        url: repository.html_url,
+        colorClass: 'tile-tone-09',
+        languages: [repository.fork ? 'Fork & Collaboration' : null, repository.language, ...(repository.topics || []).slice(0, 3)].filter(Boolean),
+        date: repository.pushed_at,
+        description: [repository.description || (repository.fork
+            ? 'A fork I am developing with improvements and planned add-ons for the original project.'
+            : 'Public source code and project files available on GitHub.')],
+        links
+    };
+}
+
+function getFeaturedGithubUrls() {
+    const urls = new Set();
+    portfolioData.categories.forEach((category) => {
+        category.projects.forEach((project) => {
+            if (project.url && project.url.includes('github.com/')) urls.add(normalizeUrl(project.url));
+        });
+    });
+    return urls;
+}
+
+function normalizeUrl(url) {
+    return url.toLowerCase().replace(/\/$/, '');
+}
+
+function buildGithubFallback(username, message) {
+    const fallback = document.createElement('section');
+    fallback.classList.add('githubFallback', 'fullRow');
+    const text = document.createElement('p');
+    text.textContent = message;
+    const link = document.createElement('a');
+    link.classList.add('tileLinkButton');
+    link.href = `https://github.com/${encodeURIComponent(username)}?tab=repositories`;
+    link.target = '_BLANK';
+    link.innerHTML = '<i class="fab fa-github tileLinkIcon"></i><span>Browse all repositories on GitHub</span>';
+    fallback.append(text, link);
+    return fallback;
+}
 
 function hideJsWarning() {
     const warning = document.querySelector('[data-js-warning]');
