@@ -1,5 +1,10 @@
 // Centralized portfolio data for rendering
 const portfolioData = {
+    github: {
+        username: 'MythicalCuddles',
+        categoryTitle: 'Open Source & Collaborations',
+        description: 'My public repositories, including forks where I am working with the original creators on improvements and planned add-ons.'
+    },
     socialLinks: [
         {
             label: 'GitHub',
