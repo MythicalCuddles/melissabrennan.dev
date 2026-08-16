@@ -3,7 +3,15 @@ const portfolioData = {
     github: {
         username: 'MythicalCuddles',
         categoryTitle: 'Open Source & Collaborations',
-        description: 'My public repositories, including forks where I am working with the original creators on improvements and planned add-ons.'
+        description: 'My public repositories, including forks where I am working with the original creators on improvements and planned add-ons.',
+        excludedRepositories: [
+            'melissabrennan.dev',
+            'MythicalCuddles',
+            'Vencord',
+            'stationeers_localization',
+            'Quiz-Game',
+            'Monopoly-Game-Quiz'
+        ]
     },
     socialLinks: [
         {

@@ -41,8 +41,13 @@ async function renderGithubProjects() {
 
         const repositories = await response.json();
         const featuredUrls = getFeaturedGithubUrls();
+        const excludedRepositories = new Set(
+            (config.excludedRepositories || []).map((name) => name.toLowerCase())
+        );
         const projects = repositories
-            .filter((repository) => !repository.archived && !featuredUrls.has(normalizeUrl(repository.html_url)))
+            .filter((repository) => !repository.archived
+                && !featuredUrls.has(normalizeUrl(repository.html_url))
+                && !excludedRepositories.has(repository.name.toLowerCase()))
             .map(githubRepositoryToProject);
 
         status.remove();
