@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#17141f">
+
+        <title>Projects // Melissa Brennan</title>
+
+        <link rel="stylesheet" href="css/style.css?version=6">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+        
+        <script src="js/projects-data.js" defer></script>
+        <script src="js/main.js" defer></script>
+    </head>
+    <body>
+        <a class="skipLink" href="#portfolio">Skip to project list</a>
+        <div id="container">
+            <aside class="profilePanel">
+                <header id="topContent">
+                    <p class="eyebrow"><span aria-hidden="true"></span> Portfolio</p>
+                    <h1 id="pageTitle">Melissa<br>Brennan</h1>
+                    <p class="introText">Projects, virtual worlds, games, music and experiments from MythicalCuddles.</p>
+                    <nav class="siteNav" aria-label="Primary navigation">
+                        <a href="index.html">About</a>
+                        <a href="projects.html" aria-current="page">Projects</a>
+                    </nav>
+                </header>
+
+                <section class="socialSection" aria-labelledby="social-heading">
+                    <h2 class="sectionHeading" id="social-heading">Find me online</h2>
+                    <div id="socialPills" data-social-container></div>
+                </section>
+            </aside>
+
+            <main class="mainContent" id="portfolio">
+                <header class="workHeader">
+                    <p class="eyebrow"><span aria-hidden="true"></span> Selected work</p>
+                    <p>Explore my websites, games, VRChat worlds, DJ sets and personal projects.</p>
+                </header>
+
+                <div class="jsWarning" data-js-warning>
+                    <h2>JavaScript required</h2>
+                    <p>
+                        This portfolio needs JavaScript to load projects and categories. Please enable JavaScript in your browser and reload the page.
+                    </p>
+                </div>
+
+                <div data-portfolio></div>
+            </main>
+
+            <footer id="footer">
+                <span id="footCenter">
+                    <!--Background pattern from <a target="_BLANK" href="https://www.toptal.com/designers/subtlepatterns/">Toptal Subtle Patterns</a>
+                    <br>--> <!-- background not used in flat style changes. -->
+                    <a target="_BLANK" href="https://melissabrennan.dev">melissabrennan.dev</a> •
+                    <a target="_BLANK" href="https://mythicalcuddl.es">mythicalcuddl.es</a>
+                    <br>
+                    <a target="_BLANK" href="https://github.com/MythicalCuddles/melissabrennan.dev">Source Code</a>
+                </span>
+            </footer>
+        </div>
+
+        <template id="category-template">
+            <div class="category">
+                <h2 class="sectionHeading"></h2>
+                <section class="tileContainer"></section>
+            </div>
+        </template>
+
+        <template id="tile-template">
+            <section class="tile">
+                <header>
+                    <a class="tileButton">
+                        <h3 class="tileTitle"></h3>
+                        <p class="tileLanguages"></p>
+                        <time></time>
+                    </a>
+                    <p class="tileHeaderNote"></p>
+                </header>
+                <div class="tileContent"></div>
+                <ul class="tileLinks"></ul>
+            </section>
+        </template>
+    </body>
+</html>
