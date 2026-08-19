@@ -4,72 +4,67 @@
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="theme-color" content="#121018">
+        <meta name="theme-color" content="#17141f">
 
-        <title>Melissa Brennan // Portfolio</title>
+        <title>Melissa Brennan // MythicalCuddles</title>
+        <meta name="description" content="The home of Melissa Brennan — developer, creator of virtual worlds, game maker and DJ known online as MythicalCuddles.">
 
-        <link rel="stylesheet" href="css/style.css?version=4">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-        
-        <script src="js/projects-data.js" defer></script>
-        <script src="js/main.js" defer></script>
+        <link rel="stylesheet" href="css/style.css?version=6">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
     </head>
-    <body>
-        <div id="container">
-            <header id="topContent">
-                <p class="eyebrow">Portfolio</p>
-                <h1 id="pageTitle">Melissa Brennan</h1>
-                <p class="introText"></p>
+    <body class="landingPage">
+        <a class="skipLink" href="#about">Skip to introduction</a>
+        <div class="landingShell">
+            <header class="landingHeader">
+                <a class="wordmark" href="index.html" aria-label="Melissa Brennan, home">MB<span>.</span></a>
+                <nav class="siteNav" aria-label="Primary navigation">
+                    <a href="index.html" aria-current="page">About</a>
+                    <a href="projects.html">Projects</a>
+                </nav>
             </header>
 
-            <main class="mainContent">
-                <section class="socialSection">
-                    <h2 class="sectionHeading">Socials & Links</h2>
-                    <div id="socialPills" data-social-container></div>
-                </section>
-
-                <div class="jsWarning" data-js-warning>
-                    <h2>JavaScript required</h2>
-                    <p>
-                        This portfolio needs JavaScript to load projects and categories. Please enable JavaScript in your browser and reload the page.
-                    </p>
+            <main class="landingMain" id="about">
+                <div class="avatarFrame">
+                    <img src="https://github.com/MythicalCuddles.png?size=480" alt="MythicalCuddles' GitHub profile avatar" width="480" height="480">
+                    <span class="availability"><i aria-hidden="true"></i> MythicalCuddles</span>
                 </div>
 
-                <div data-portfolio></div>
+                <section class="landingIntro" aria-labelledby="landing-title">
+                    <p class="eyebrow"><span aria-hidden="true"></span> Hello, I'm</p>
+                    <h1 id="landing-title">Melissa<br>Brennan.</h1>
+                    <p class="landingLead">Developer, virtual world creator, game maker and DJ exploring the places where code and creativity meet.</p>
+                    <div class="landingActions">
+                        <a class="primaryAction" href="projects.html">Explore my projects <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                        <a class="secondaryAction" href="https://github.com/MythicalCuddles" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> GitHub profile</a>
+                    </div>
+                </section>
             </main>
 
-            <footer id="footer">
+            <section class="landingDetails" aria-label="What I create">
+                <article>
+                    <span>01</span>
+                    <h2>Build</h2>
+                    <p>Websites, open-source tools and personal software projects.</p>
+                </article>
+                <article>
+                    <span>02</span>
+                    <h2>Create</h2>
+                    <p>Games and interactive virtual worlds made with Godot and Unity.</p>
+                </article>
+                <article>
+                    <span>03</span>
+                    <h2>Play</h2>
+                    <p>Trance and happy hardcore DJ sets shared online.</p>
+                </article>
+            </section>
+
+            <footer id="footer" class="landingFooter">
                 <span id="footCenter">
-                    <!--Background pattern from <a target="_BLANK" href="https://www.toptal.com/designers/subtlepatterns/">Toptal Subtle Patterns</a>
-                    <br>--> <!-- background not used in flat style changes. -->
-                    <a target="_BLANK" href="https://melissabrennan.dev">melissabrennan.dev</a> •
-                    <a target="_BLANK" href="https://mythicalcuddl.es">mythicalcuddl.es</a>
-                    <br>
-                    <a target="_BLANK" href="https://github.com/MythicalCuddles/melissabrennan.dev">Source Code</a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://melissabrennan.dev">melissabrennan.dev</a> •
+                    <a target="_blank" rel="noopener noreferrer" href="https://mythicalcuddl.es">mythicalcuddl.es</a><br>
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/MythicalCuddles/melissabrennan.dev">Source Code</a>
                 </span>
             </footer>
         </div>
-
-        <template id="category-template">
-            <div class="category">
-                <h2 class="sectionHeading"></h2>
-                <section class="tileContainer"></section>
-            </div>
-        </template>
-
-        <template id="tile-template">
-            <section class="tile">
-                <header>
-                    <a class="tileButton">
-                        <h3 class="tileTitle"></h3>
-                        <p class="tileLanguages"></p>
-                        <time></time>
-                    </a>
-                    <p class="tileHeaderNote"></p>
-                </header>
-                <div class="tileContent"></div>
-                <ul class="tileLinks"></ul>
-            </section>
-        </template>
     </body>
 </html>
